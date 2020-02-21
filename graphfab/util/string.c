@@ -37,7 +37,7 @@
 
 char* gf_strclone(const char* src) {
     if(!src) {
-        AN(0, "gf_strclone passed null arg");
+        AN(0, "gf_strclone passed null arg")
         return NULL;
     } else {
         size_t size = strlen(src)+1;

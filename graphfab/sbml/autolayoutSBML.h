@@ -44,10 +44,10 @@
 extern "C" {
 #endif
 
-/** @brief C wrapper for SBMLDocument
+/** @brief C wrapper for libsbml::SBMLDocument
  */
 typedef struct __gf_SBMLLayout {
-    void* pdoc; /// Pointer to SBMLDocument cast to void
+    void* pdoc; /// Pointer to libsbml::SBMLDocument cast to void
 } gf_SBMLModel;
 
 /** @brief Destructor for @ref gf_SBMLModel

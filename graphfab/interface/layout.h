@@ -781,7 +781,7 @@ _GraphfabExport void gf_node_setName(gf_node* n, const char* name);
  *  @return Reserved
  *  \ingroup C_API
  */
-_GraphfabExport int gf_node_getConnectedReactions(gf_node* n, gf_network* m, unsigned int* num, gf_reaction** rxns);
+_GraphfabExport int gf_node_getConnectedReactions(gf_node* n, gf_network* m, unsigned int *num, gf_reaction** rxns);
 
 /** @brief Get a list of all curves connected to the node
  *  @param[in] n The node object
@@ -790,7 +790,7 @@ _GraphfabExport int gf_node_getConnectedReactions(gf_node* n, gf_network* m, uns
  *  @return Reserved
  *  \ingroup C_API
  */
-_GraphfabExport int gf_node_getAttachedCurves(gf_node* n, gf_network* m, unsigned int* num, gf_curve** curves);
+_GraphfabExport int gf_node_getAttachedCurves(gf_node* n, gf_network* m, unsigned int *num, gf_curve** curves);
 
 /** @brief Tests whether two nodes are identical
  *  @param[in] u A node object

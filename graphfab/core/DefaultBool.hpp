@@ -33,7 +33,7 @@ namespace Sagittarius
             bool b;
         public:
             DefaultFalseBool() : b(false) {}
-            DefaultFalseBool(const DefaultFalseBool& other) : b(other.b) {}
+            DefaultFalseBool(const DefaultFalseBool& other) = default;
             bool& get() { return b; }
             const bool& get() const { return b; }
     };
@@ -44,7 +44,7 @@ namespace Sagittarius
             bool b;
         public:
             DefaultTrueBool() : b(true) {}
-            DefaultTrueBool(const DefaultTrueBool& other) : b(other.b) {}
+            DefaultTrueBool(const DefaultTrueBool& other) = default;
             bool& get() { return b; }
             const bool& get() const { return b; }
     };

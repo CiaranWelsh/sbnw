@@ -40,7 +40,7 @@
 
 #include "graphfab/core/SagittariusCommon.h"
 
-#include <stdint.h>
+#include <cstdint>
 
 //==DEFINES/TYPES===================================//
 

@@ -74,8 +74,8 @@ namespace Graphfab {
     }
     
     Real Affine2d::cofactor(int i, int j) const {
-        AT(0 <= i && i < 3, "col out of range");
-        AT(0 <= j && j < 3, "row out of range");
+        AT(0 <= i && i < 3, "col out of range")
+        AT(0 <= j && j < 3, "row out of range")
         
         cutout c = getCutout(i,j);
         int sign = (i+j)%2 ? 1 : -1;
@@ -92,9 +92,9 @@ namespace Graphfab {
             if(k != c) j[n++] = k;
         }
         
-        return cutout(
+        return {
             rc(i[0], j[0]), rc(i[0], j[1]),
-            rc(i[1], j[0]), rc(i[1], j[1]));
+            rc(i[1], j[0]), rc(i[1], j[1])};
     }
     
     Affine2d Affine2d::compose(const Affine2d& u, const Affine2d& v) {
@@ -127,9 +127,9 @@ namespace Graphfab {
     }
     
     Affine2d Affine2d::operator*(const Real& k) const {
-        return Affine2d(k*rc(0,0), k*rc(0,1), k*rc(0,2), 
+        return {k*rc(0,0), k*rc(0,1), k*rc(0,2),
                         k*rc(1,0), k*rc(1,1), k*rc(1,2), 
-                        k*rc(2,0), k*rc(2,1), k*rc(2,2));
+                        k*rc(2,0), k*rc(2,1), k*rc(2,2)};
     }
 
     Point Affine2d::applyLinearOnly(const Point& p) const {

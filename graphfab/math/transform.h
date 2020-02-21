@@ -89,15 +89,15 @@ namespace Graphfab {
             
             /// Access the specified row/column
             Real rc(int r, int c) const {
-                AT(0 <= r && r < 3, "Row out of range");
-                AT(0 <= c && c < 3, "Column out of range");
+                AT(0 <= r && r < 3, "Row out of range")
+                AT(0 <= c && c < 3, "Column out of range")
                 return _e[c+r*3];
             }
             
             /// Access the specified row/column as reference
             Real& rcref(int r, int c) {
-                AT(0 <= r && r < 3, "Row out of range");
-                AT(0 <= c && c < 3, "Column out of range");
+                AT(0 <= r && r < 3, "Row out of range")
+                AT(0 <= c && c < 3, "Column out of range")
                 return _e[c+r*3];
             }
             

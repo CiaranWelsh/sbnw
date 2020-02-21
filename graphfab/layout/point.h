@@ -117,7 +117,7 @@ namespace Graphfab {
 
         /// Take the square root of both coords
         Point sqrtTerms() const {
-            AT(x >= 0 && y >= 0, "Cannot take negative square root");
+            AT(x >= 0 && y >= 0, "Cannot take negative square root")
             return Point(sqrt(x), sqrt(y));
         }
 

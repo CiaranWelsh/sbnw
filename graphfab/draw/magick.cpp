@@ -63,7 +63,7 @@ void gf_MagickSizeImage(MagickWand *wand, gf_layoutInfo* l) {
 //draw the compartments
 void gf_MagickDrawComps(MagickWand *wand, gf_layoutInfo* l, Affine2d* tf) {
     Network* net = (Network*)l->net;
-    AN(net, "No network");
+    AN(net, "No network")
     
     //create our wands
     PixelWand* pixie = NewPixelWand();
@@ -91,7 +91,7 @@ void gf_MagickDrawComps(MagickWand *wand, gf_layoutInfo* l, Affine2d* tf) {
 //draw the nodes
 void gf_MagickDrawNodes(MagickWand *wand, gf_layoutInfo* l, Affine2d* tf) {
     Network* net = (Network*)l->net;
-    AN(net, "No network");
+    AN(net, "No network")
     
     //create our wands
     PixelWand* pixie = NewPixelWand();
@@ -151,13 +151,13 @@ void gf_MagickDrawRxnCurve(MagickWand *wand, RxnBezier* c, bool straight, Affine
 //draw the reactions
 void gf_MagickDrawRxns(MagickWand *wand, gf_layoutInfo* l, Affine2d* tf) {
     Network* net = (Network*)l->net;
-    AN(net, "No network");
+    AN(net, "No network")
     
     for(Network::ConstRxnIt i=net->RxnsBegin(); i!=net->RxnsEnd(); ++i) {
         Graphfab::Reaction* rxn = *i;
-        AN(rxn->getCurves().size());
+        AN(rxn->getCurves().size())
         for(Graphfab::Reaction::ConstCurveIt c=rxn->getCurves().begin(); c!=rxn->getCurves().end(); ++c) {
-            AN(*c);
+            AN(*c)
             gf_MagickDrawRxnCurve(wand, *c, false, tf);
         }
     }
@@ -169,7 +169,7 @@ void gf_MagickRenderToFile(gf_layoutInfo* l, const char* filename, void* tf_) {
     MagickWandGenesis();
     //create our wand
     wand = NewMagickWand();
-    AN(wand, "Failed to create Magick Wand");
+    AN(wand, "Failed to create Magick Wand")
     
     Affine2d I;
     Affine2d* tf = NULL;

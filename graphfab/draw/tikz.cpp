@@ -31,40 +31,42 @@
 
 #include "graphfab/core/SagittariusCore.h"
 #include "graphfab/draw/tikz.h"
-#include "graphfab/util/string.h"
+#include <cstring>
 
 #include <sstream>
+#include <utility>
+#include <cstdio>
 
 const char* gf_renderTikZ(gf_layoutInfo* l) {
   using namespace Graphfab;
 
   try {
-    Network* net = (Network*)l->net;
+    auto* net = (Network*)l->net;
     if (!net)
-      SBNW_THROW(InternalCheckFailureException, "No network set", "gf_renderTikZ");
-    Canvas* can = (Canvas*)l->canv;
+      SBNW_THROW(InternalCheckFailureException, "No network set", "gf_renderTikZ")
+    auto* can = (Canvas*)l->canv;
     if (!can)
-      SBNW_THROW(InternalCheckFailureException, "No canvas set", "gf_renderTikZ");
+      SBNW_THROW(InternalCheckFailureException, "No canvas set", "gf_renderTikZ")
 
     Graphfab::Real cmscale = 50.;
     TikZRenderer renderer(can->getBox(), can->getWidth()/cmscale, can->getHeight()/cmscale);
     return gf_strclone(renderer.str(net, can).c_str());
   } catch (const Exception& e) {
     gf_setError( e.getReport().c_str() );
-    return NULL;
+    return nullptr;
   }
 }
 
 int gf_renderTikZFile(gf_layoutInfo* l, const char* filename) {
   try {
 //   fprintf(stderr, "Saving to TikZ file %s\n", filename);
-    FILE* f = fopen(filename, "w");
+    FILE* f = std::fopen(filename, "w");
     if (!f)
-      SBNW_THROW(Graphfab::InternalCheckFailureException, "Could not open file " + ( filename ? std::string(filename) : std::string("") ), "gf_renderTikZFile");
+      SBNW_THROW(Graphfab::InternalCheckFailureException, "Could not open file " + ( filename ? std::string(filename) : std::string("") ), "gf_renderTikZFile")
 
     const char* buf = gf_renderTikZ(l);
     if (!buf)
-      SBNW_THROW(Graphfab::InternalCheckFailureException, "Could not create buffer", "gf_renderTikZFile");
+      SBNW_THROW(Graphfab::InternalCheckFailureException, "Could not create buffer", "gf_renderTikZFile")
 
     fprintf(f, "%s", buf);
 

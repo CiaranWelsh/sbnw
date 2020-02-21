@@ -51,7 +51,7 @@ void gf_emitWarn(const char* str) {
 }
 
 char* gf_getLastError() {
-  if (lastError_.size())
+  if (!lastError_.empty())
     return gf_strclone(lastError_.c_str());
   else
     return gf_strclone("");

@@ -65,9 +65,9 @@ namespace Graphfab
                 EXC_INTERNAL_CHECK_FAILURE
             };
             
-            Exception( const int type, const String& desc, const String& origin, const char* name, const char* file, const long line);
+            Exception( int type, String  desc, String  origin, const char* name, const char* file, long line);
             
-            ~Exception() throw() {}
+            ~Exception() noexcept override = default;
             
             void operator = ( const Exception &rval );
             
@@ -75,7 +75,7 @@ namespace Graphfab
             
             //Can't have a const int return type or warnings about ignored qualifiers. Stupid compiler.
             //Idea: maybe it really SHOULD be const int. Think about it.
-            virtual int getType() const throw();
+            virtual int getType() const noexcept;
             
             virtual const String& getDescription() const { return m_desc; }
             
@@ -86,7 +86,7 @@ namespace Graphfab
             virtual long getLine() const { return m_line; }
             
             //Override std::exception::what
-            const char* what() const throw() {
+            const char* what() const noexcept override {
               // leak
               return gf_strclone(getReport().c_str());
             }

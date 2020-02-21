@@ -70,10 +70,10 @@ void gf_layout_setStiffness(fr_options* opt, double k) {
 void gf_doLayoutAlgorithm(fr_options opt, gf_layoutInfo* l) {
     using namespace Graphfab;
     
-    Network* net = (Network*)l->net;
-    AN(net, "No network");
-    Canvas* can = (Canvas*)l->canv;
-    AN(can, "No canvas");
+    auto* net = (Network*)l->net;
+    AN(net, "No network")
+    auto* can = (Canvas*)l->canv;
+    AN(can, "No canvas")
     
     if(opt.prerandomize)
         //TODO: use canvas width, height
@@ -85,21 +85,21 @@ void gf_doLayoutAlgorithm(fr_options opt, gf_layoutInfo* l) {
 void gf_doLayoutAlgorithm2(fr_options opt, gf_network* n, gf_canvas* c) {
     using namespace Graphfab;
     
-    AN(n, "No network");
-    Network* net = (Network*)n->n;
-    AN(net, "No network");
+    AN(n, "No network")
+    auto* net = (Network*)n->n;
+    AN(net, "No network")
     
-    Canvas* can = NULL;
+    Canvas* can = nullptr;
     if(c) {
         can = (Canvas*)c->canv;
-        AN(can, "No canvas");
+        AN(can, "No canvas")
     }
     
     if(opt.prerandomize)
         //TODO: use canvas width, height
         net->randomizePositions(Graphfab::Box(Graphfab::Point(0.,0.), Graphfab::Point(1024., 1024.)));
     
-    FruchtermanReingold(opt, *net, can, NULL);
+    FruchtermanReingold(opt, *net, can, nullptr);
 }
 
 namespace Graphfab {
@@ -216,17 +216,17 @@ namespace Graphfab {
         // repulsive forces
         for(uint64 i=0; i<net.getNElts(); ++i) {
             //NetworkElement* u = *i;
-            NetworkElement* u = net.getElt(i);;
+            NetworkElement* u = net.getElt(i);
             
             // is the network element a container?
-            Graphfab::Compartment* comp=NULL;
+            Graphfab::Compartment* comp=nullptr;
             if(u->getType() == NET_ELT_TYPE_COMP)
                 comp = dynamic_cast<Compartment*>(u); //get the associated compartment
             
             for(uint64 j=i+1; j<net.getNElts(); ++j) {
                 //NetworkElement* v = *j;
                 NetworkElement* v = net.getElt(j);
-                AT(u != v, "Cannot apply to self");
+                AT(u != v, "Cannot apply to self")
                 if(!eltTypesInteract(u->getType(), v->getType(), &opt))
                     continue; // elements do not interact
                 
@@ -268,7 +268,7 @@ namespace Graphfab {
 
         if (opt.grav >= 5.) {
           for(uint64 i=0; i<net.getNElts(); ++i) {
-            NetworkElement* u = net.getElt(i);;
+            NetworkElement* u = net.getElt(i);
             if (u->getType() == NET_ELT_TYPE_SPEC) {
               do_gravity(*u, Point(opt.baryx, opt.baryy), opt.grav, k);
             }
@@ -291,7 +291,7 @@ namespace Graphfab {
         //AT(feenableexcept(FE_DIVBYZERO) != -1);
         Box bound;
         if(opt.boundary) {
-            AN(can, "Boundary specified but no canvas");
+            AN(can, "Boundary specified but no canvas")
             bound = can->getBox();
             if(bound.canShrink(20.))
                 bound.shrink_(20.);

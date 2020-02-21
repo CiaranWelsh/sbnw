@@ -43,14 +43,14 @@ namespace Graphfab {
     
     // intersection of a ray emating from the origin (in direction v) & a horizontal line
     Point intersectRayHLine(const Point& v, const Real c) {
-        AT(mag(v.y) > 1e-6, "No intersection");
+        AT(mag(v.y) > 1e-6, "No intersection")
         Real s = c / v.y;
         return Point(s*v.x, c);
     }
     
     // intersection of a ray emating from the origin (in direction v) & a vertical line
     Point intersectRayVLine(const Point& v, const Real c) {
-        AT(mag(v.x) > 1e-6, "No intersection");
+        AT(mag(v.x) > 1e-6, "No intersection")
         Real s = c / v.x;
         return Point(c, s*v.y);
     }
@@ -102,7 +102,7 @@ namespace Graphfab {
         if(r.first)
             return r;
         
-        AN(0, "Should not happen");
+        AN(0, "Should not happen")
         return r;
     }
 

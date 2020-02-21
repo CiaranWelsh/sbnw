@@ -537,7 +537,7 @@ static PyObject* gfp_Compartment_getAttro(gfp_Compartment *self, PyObject *attr)
 }
 
 static int gfp_Compartment_SetAttro(gfp_Compartment* self, PyObject* attr, PyObject* v) {
-    return PyObject_GenericSetAttr((PyObject*)self, attr, v);;
+    return PyObject_GenericSetAttr((PyObject*)self, attr, v);
 }
 
 static PyObject* gfp_Compartment_add(gfp_Compartment *self, PyObject *args, PyObject *kwds);
@@ -1527,7 +1527,7 @@ static PyObject* gfp_NetworkRandomizeLayout(gfp_Network *self, PyObject *args, P
     }
     if(!use_coords) {
 
-      AN(canvas, "No canvas");
+      AN(canvas, "No canvas")
       Py_INCREF(canvas);
       // this is rendered unnecessary by "O!" above
       if(Py_TYPE(canvas) != &gfp_CanvasType) {
@@ -1627,7 +1627,7 @@ static PyObject* gfp_TruncatePyTuple1(PyObject *tuple, PyObject *value) {
     
     for(i=0,j=0; i<size; ++i) {
         PyObject* x = PyTuple_GetItem(tuple, i);
-        AN(j == i || j+1 == i, "Invariant broken");
+        AN(j == i || j+1 == i, "Invariant broken")
         if(x != value) {
             Py_INCREF(x);
             if(PyTuple_SetItem(newtuple, j++, x)) {
@@ -1699,7 +1699,7 @@ void gfp_Network_RemoveReaction(gfp_Network *self, gfp_Rxn* rxn) {
 void gfp_Network_TrimReactions(gfp_Network *self) {
     size_t numrxns, i;
     numrxns  = gf_nw_getNumRxns (&self->n);
-    AT(numrxns == PyTuple_Size(self->rxns), "Synchronization error");
+    AT(numrxns == PyTuple_Size(self->rxns), "Synchronization error")
     
     for(i=0; i<PyTuple_Size(self->rxns); ++i) {
         gfp_Rxn* rxn = (gfp_Rxn*)PyTuple_GetItem(self->rxns, i);
@@ -3195,5 +3195,5 @@ initsbnw(void)
     // add version info
     PyModule_AddStringConstant(m, "__version__", gf_getCurrentLibraryVersion());
     
-    MODINIT_SUCCESS(m);
+    MODINIT_SUCCESS(m)
 }

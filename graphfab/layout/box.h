@@ -59,7 +59,7 @@ namespace Graphfab {
 
             /// Construct from upper-left & lower-right extents resp.
             Box(const Point& min, const Point& max)
-                : _min(min), _max(max) { AT(_min.x <= _max.x && _min.y <= _max.y, "Min/max mismatch"); }
+                : _min(min), _max(max) { AT(_min.x <= _max.x && _min.y <= _max.y, "Min/max mismatch") }
 
             /// Construct from upper-left & lower-right extents directly
             Box(Real x1, Real y1, Real x2, Real y2)
@@ -68,7 +68,7 @@ namespace Graphfab {
                         dump(std::cerr);
                         std::cerr << "\n";
                     }
-                    AT(_min.x <= _max.x && _min.y <= _max.y, "Min/max mismatch");
+                    AT(_min.x <= _max.x && _min.y <= _max.y, "Min/max mismatch")
                 }
 
             /// Upper-left

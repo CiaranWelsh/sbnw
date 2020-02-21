@@ -308,12 +308,12 @@ namespace Graphfab {
             Real getMaxY() const { return getExtents().getMax().y; }
 
             /// With/height derived from extents
-            Real getWidth() const { AT(getMaxX() >= getMinX()); return getMaxX() - getMinX(); }
-            Real getHeight() const { AT(getMaxY() >= getMinY()); return getMaxY() - getMinY(); }
+            Real getWidth() const { AT(getMaxX() >= getMinX()) return getMaxX() - getMinX(); }
+            Real getHeight() const { AT(getMaxY() >= getMinY()) return getMaxY() - getMinY(); }
 
             /// With/height derived from extents
-            Real getGlobalWidth() const { AT(getMaxX() >= getMinX()); return (getMaxX() - getMinX())*tf_.scaleFactor(); }
-            Real getGlobalHeight() const { AT(getMaxY() >= getMinY()); return (getMaxY() - getMinY())*tf_.scaleFactor(); }
+            Real getGlobalWidth() const { AT(getMaxX() >= getMinX()) return (getMaxX() - getMinX())*tf_.scaleFactor(); }
+            Real getGlobalHeight() const { AT(getMaxY() >= getMinY()) return (getMaxY() - getMinY())*tf_.scaleFactor(); }
 
             /** @brief Get bounding box
              */
@@ -324,7 +324,7 @@ namespace Graphfab {
                 case COORD_SYSTEM_GLOBAL:
                   return tf_*getLocalExtents();
                 default:
-                  AN(0, "Unknown coord system");
+                  AN(0, "Unknown coord system")
                   return getLocalExtents();
               }
             }
@@ -339,7 +339,7 @@ namespace Graphfab {
             /// Set the extents of the compartment
             void setExtents(const Box& b) { _ext = b; recalcCentroid(); }
 
-            Box getBoundingBox() const { return getExtents(); }
+        virtual Box getBoundingBox() const { return getExtents(); }
 //             Box getBoundingBox() const { return Box(); }
 
             virtual void applyTransform(const Affine2d& t) {
@@ -490,7 +490,7 @@ namespace Graphfab {
 
             int getSubgraphIndex() const {
                 if (isub_ < 0)
-                    SBNW_THROW(InvalidParameterException, "No subgraph index set", "Network::getSubgraphIndex");
+                    SBNW_THROW(InvalidParameterException, "No subgraph index set", "Network::getSubgraphIndex")
                 return isub_;
             }
 
@@ -513,7 +513,7 @@ namespace Graphfab {
             /// Get coords of lower right-hand corner
             Point getLowerRightCorner() const;
 
-            void recalcExtents() {
+            void recalcExtents() override {
                 Real width = _ext.width();
                 Real height = _ext.height();
                 Point del(0.5*width, 0.5*height);
@@ -575,9 +575,9 @@ namespace Graphfab {
     /// Does runtime type checking
     inline Node* CastToNode(void* p) {
         NetworkElement* e = (NetworkElement*)p;
-        AN(e->hasNetworkElementBase(), "Runtime type check failed");
+        AN(e->hasNetworkElementBase(), "Runtime type check failed")
 //         std::cout << typeid((Node&)*e).name() << std::endl;
-        AN(dynamic_cast<Node*>(e), "Runtime type check failed");
+        AN(dynamic_cast<Node*>(e), "Runtime type check failed")
         return dynamic_cast<Node*>(e);
 //         Node* x = (Node*)e;
 //         AN(x->doByteCheck(), "Runtime type check failed");
@@ -607,8 +607,6 @@ namespace Graphfab {
             typedef std::pair<Node*, RxnRoleType> SpeciesElt;
             /// Contains species and their respective roles
             typedef std::vector< SpeciesElt > NodeVec;
-            /// Role container
-            //typedef std::vector<RxnRoleType> RoleVec;
             /// Curve container
             typedef std::vector<RxnBezier*> CurveVec;
 
@@ -836,8 +834,8 @@ namespace Graphfab {
     /// Does runtime type checking
     inline Reaction* CastToReaction(void* p) {
         NetworkElement* e = (NetworkElement*)p;
-        AN(e->hasNetworkElementBase(), "Runtime type check failed");
-        AN(dynamic_cast<Reaction*>(e), "Runtime type check failed");
+        AN(e->hasNetworkElementBase(), "Runtime type check failed")
+        AN(dynamic_cast<Reaction*>(e), "Runtime type check failed")
         return dynamic_cast<Reaction*>(e);
     }
 
@@ -895,7 +893,7 @@ namespace Graphfab {
             void setGlyph(const std::string& glyph) { _gly = glyph; }
 
             void setCentroid(const Point& p) {
-                AN(0, "setCentroid should not be called on a compt");
+                AN(0, "setCentroid should not be called on a compt")
             }
 
             /// Approximate size; used by distance algorithms etc.
@@ -1159,7 +1157,7 @@ namespace Graphfab {
 
             uint64 getNumUniqueNodes() const;
 
-            Box getBoundingBox() const;
+            Box getBoundingBox() const override;
 
             void fitToWindow(const Box& w);
 
@@ -1300,7 +1298,7 @@ namespace Graphfab {
     /// Does runtime type checking
     inline Network* CastToNetwork(void* p) {
         NetworkElement* e = (NetworkElement*)p;
-        AN(e->hasNetworkElementBase(), "Runtime type check failed");
+        AN(e->hasNetworkElementBase(), "Runtime type check failed")
         return dynamic_cast<Network*>(e);
     }
 
@@ -1312,18 +1310,18 @@ namespace Graphfab {
      * @details The network will be initialized with the spatial
      * configuration as specified by the layout model
     */
-    Network* networkFromLayout(const Layout& lay, const Model& mod);
+    Network* networkFromLayout(const libsbml::Layout& lay, const libsbml::Model& mod);
 
     /** @brief Construct network topology from the given model
      * @param[in] lay
      * @returns A @ref Network object representing the topology
      * @details Useful when layout information isn't present
     */
-    Network* networkFromModel(const Model& mod);
+    Network* networkFromModel(const libsbml::Model& mod);
 
     /** @brief Gets the number of non-locked nodes
      */
-    int layout_getNumFloatingSpecies(const Layout& lay, const Model& mod);
+    int layout_getNumFloatingSpecies(const libsbml::Layout& lay, const libsbml::Model& mod);
 
 }
 

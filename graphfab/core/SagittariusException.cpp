@@ -31,6 +31,7 @@
 
 //- GENERAL -//
 #include <sstream>
+#include <utility>
 
 //- SPECIFIC -//
 #include "graphfab/core/SagittariusException.hpp"
@@ -40,8 +41,8 @@ namespace Graphfab
     //== CLASS METHODS ===============================================================
     
     //## CLASS Exception #############################################################
-    Exception::Exception( const int type, const String& desc, const String& origin, const char* name, const char* file, const long line)
-            : m_type( type ), m_desc( desc ), m_origin( origin ), m_name(name), m_file( file ), m_line( line ) {}
+    Exception::Exception( const int type, String  desc, String  origin, const char* name, const char* file, const long line)
+            : m_type( type ), m_desc(desc ), m_origin( origin), m_name(name), m_file( file ), m_line( line ) {}
         //note: logging the exception (like Ogre) is probably a bad idea (assuming the log function
         //itself can throw exceptions).  We try to log the exception, then the log function throws
         //another exception.  We try to log that exception, and the cycle repeats ad infinitum.
@@ -82,7 +83,7 @@ namespace Graphfab
         return report;
     }
     
-    int Exception::getType() const throw()
+    int Exception::getType() const noexcept
     {
         return m_type;
     }

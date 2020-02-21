@@ -100,7 +100,7 @@ namespace Graphfab {
         case 2:
           return Point(-1, 0);
         default:
-          SBNW_THROW(InvalidParameterException, "Index out of range", "Arrowhead::getVert");
+          SBNW_THROW(InvalidParameterException, "Index out of range", "Arrowhead::getVert")
       }
     }
 

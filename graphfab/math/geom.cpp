@@ -116,7 +116,7 @@ namespace Graphfab {
         case 3:
           return P3_;
         default:
-          AN(0, "Index out of range");
+          AN(0, "Index out of range")
       }
     }
 

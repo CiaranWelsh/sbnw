@@ -49,9 +49,9 @@
 
     //We have many styles to choose from...
     #define SAGITTARIUS_ASSERT1( x ) REALASSERT( x )
-    #define SAGITTARIUS_ASSERT2( x, msg ) REALASSERT( (x) && msg ) //thank you gcc
+    #define SAGITTARIUS_ASSERT2( x, msg ) REALASSERT( (x) && (msg) ) //thank you gcc
     #define SAGITTARIUS_IASSERT1( x ) REALASSERT( !(x) )
-    #define SAGITTARIUS_IASSERT2( x, msg ) REALASSERT( !(x) && msg )
+    #define SAGITTARIUS_IASSERT2( x, msg ) REALASSERT( !(x) && (msg) )
     #define EXPAND(x) x //Workaround for MSVC bug
     #define GET_ASTM(A1, A2, A3, A4, ...) A4
     
