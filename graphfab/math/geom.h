@@ -39,8 +39,8 @@
 //== INCLUDES ========================================================================
 
 #include "graphfab/core/SagittariusCore.h"
-#include "graphfab/layout/point.h"
-#include "graphfab/layout/box.h"
+#include "graphfab/point.h"
+#include "graphfab/box.h"
 #include "graphfab/math/sign_mag.h"
 
 #include <math.h>

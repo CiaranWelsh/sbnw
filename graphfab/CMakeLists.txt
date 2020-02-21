@@ -4,20 +4,20 @@ set(SOURCES
         core/SagittariusAssert.c
         core/SagittariusCommon.cpp
         core/SagittariusException.cpp
-        diag/error.cpp
+        error.cpp
         draw/tikz.cpp
-        io/io.cpp
-        interface/layout.cpp
-        layout/arrowhead.cpp
-        layout/box.cpp
-        layout/canvas.cpp
-        layout/fr.cpp
-        layout/point.cpp
+        io.cpp
+        layout.cpp
+        arrowhead.cpp
+        box.cpp
+        canvas.cpp
+        fr.cpp
+        point.cpp
         math/cubic.cpp
         math/geom.cpp
         math/transform.cpp
-        network/network.cpp
-        sbml/autolayoutSBML.cpp
+        network.cpp
+        autolayoutSBML.cpp
         util/string.c
         )
 
@@ -34,17 +34,17 @@ set(HEADERS
         core/SagittariusPlatform.h
         core/SagittariusPlatformWin.h
         core/SagittariusPrefetch.h
-        diag/error.h
-#        draw/magick.h
-        io/io.h
-        interface/layout.h
-        layout/arrowhead.h
-        layout/box.h
-        layout/canvas.h
-        layout/curve.h
-        layout/fr.h
-        layout/layoutall.h
-        layout/point.h
+        error.h
+        draw/magick.h
+        io.h
+        layout.h
+        arrowhead.h
+        box.h
+        canvas.h
+        curve.h
+        fr.h
+        layoutall.h
+        point.h
         math/allen.h
         math/dist.h
         math/geom.h
@@ -54,26 +54,50 @@ set(HEADERS
         math/sig.h
         math/sign_mag.h
         math/transform.h
-        network/network.h
-        sbml/autolayoutSBML.h
+        network.h
+        autolayoutSBML.h
         util/string.h
         )
 
+set(SOURCES
+        #        core/BaseWORDs.h
+        #        core/config.h
+        #        core/Debug.hpp
+        #        core/DefaultBool.hpp
+        #        core/SagittariusAssert.h
+        #        core/SagittariusCommon.h
+        #        core/SagittariusConfigure.h
+        #        core/SagittariusCore.h
+        #        core/SagittariusException.hpp
+        #        core/SagittariusPlatform.h
+        #        core/SagittariusPlatformWin.h
+        #        core/SagittariusPrefetch.h
+        #        draw/magick.h
+        NotARealClass.cpp
+#        error.h
+#        io.h
+#        layout.h
+#        arrowhead.h
+#        box.h
+#        canvas.h
+#        curve.h
+#        fr.h
+#        layoutall.h
+#        point.h
+#        math/allen.h
+#        math/dist.h
+#        math/geom.h
+#        math/min_max.h
+#        math/rand_unif.h
+#        math/round.h
+#        math/sig.h
+#        math/sign_mag.h
+#        math/transform.h
+#        network.h
+#        autolayoutSBML.h
+        )
+
 configure_file(core/config.h core/config.h)
-
-##Image Magick-related sources
-if (LINK_WITH_MAGICK)
-    set(MAGICK_SOURCES
-            draw/magick.cpp)
-    set(MAGICK_HEADERS
-            draw/magick.h)
-else ()
-    set(MAGICK_SOURCES) # Clear magick sources
-    set(MAGICK_HEADERS)
-endif ()
-
-set(SBNW_SOURCES ${SOURCES} ${MAGICK_SOURCES})
-set(SBNW_HEADERS ${HEADERS} ${MAGICK_HEADERS})
 
 
 # Sphinx
@@ -82,7 +106,8 @@ configure_file(sphinx/source/index.rst sphinx/source/index.rst COPYONLY)
 configure_file(sphinx/Makefile sphinx/Makefile COPYONLY)
 
 # ** Shared Library **
-add_library(sbnw SHARED ${SBNW_SOURCES} ${HEADERS})
+add_library(sbnw SHARED ${SOURCES} NotARealClass.cpp NotARealClass.h ../test/NotARealTest.cpp)
+
 target_include_directories(sbnw PUBLIC ${CMAKE_SOURCE_DIR} ${LIBSBML_INCLUDE_DIR})
 
 set_target_properties(sbnw PROPERTIES COMPILE_DEFINITIONS SBNW_CLIENT_BUILD=0)
@@ -96,7 +121,7 @@ target_link_libraries(sbnw ${LIBSBML_STATIC_LIBRARY}) # libxml2 libbz2 zdll libi
 
 # ** Static Library **
 if (BUILD_STATIC_LIB)
-    add_library(sbnw_static STATIC ${SBNW_SOURCES})
+    add_library(sbnw_static STATIC ${SOURCES})
 
     # Link in dependencies
     # SBML

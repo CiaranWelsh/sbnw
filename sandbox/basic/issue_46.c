@@ -32,9 +32,9 @@
 #include <stdio.h>
 #include <string.h>
 
-#include "graphfab/sbml/autolayoutSBML.h"
-#include "graphfab/interface/layout.h"
-#include "graphfab/layout/fr.h"
+#include "graphfab/autolayoutSBML.h"
+#include "graphfab/layout.h"
+#include "graphfab/fr.h"
 
 #include <stdlib.h>
 

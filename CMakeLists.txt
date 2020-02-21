@@ -1,5 +1,5 @@
-cmake_minimum_required (VERSION 2.8)
-project (SBNW)
+cmake_minimum_required(VERSION 3.15)
+project(SBNW)
 
 
 # version information
@@ -8,6 +8,8 @@ set(SBNW_MINOR_VER  0)
 set(SBNW_PATCHLEVEL 1)
 
 set(SBNW_VER_STRING "${SBNW_MAJOR_VER}.${SBNW_MINOR_VER}.${SBNW_PATCHLEVEL}")
+
+# setup googletest
 
 # build options
 set(SBNW_LINK_TO_STATIC_LIBSBML ON)
@@ -74,26 +76,26 @@ endif()
 
 
 # GTest
-find_package(gtest)
-if(GTEST_FOUND)
-  set(WITH_GTEST ON CACHE BOOL "Use gtest framework")
-else()
-  set(WITH_GTEST OFF CACHE BOOL "Use gtest framework")
-endif()
+#find_package(gtest)
+#if(GTEST_FOUND)
+#  set(WITH_GTEST ON CACHE BOOL "Use gtest framework")
+#else()
+#  set(WITH_GTEST OFF CACHE BOOL "Use gtest framework")
+#endif()
 
-set(ENABLE_PYTHON FALSE CACHE BOOL "Enable Python bindings")
-if(ENABLE_PYTHON)
-  find_package(PythonInterp)
-  if(PYTHONINTERP_FOUND)
-    set(Python_ADDITIONAL_VERSIONS ${PYTHON_VERSION_STRING})
-  else()
-    message(ERROR FATAL "Unable to find Python")
-  endif()
-endif()
+#set(ENABLE_PYTHON FALSE CACHE BOOL "Enable Python bindings")
+#if(ENABLE_PYTHON)
+#  find_package(PythonInterp)
+#  if(PYTHONINTERP_FOUND)
+#    set(Python_ADDITIONAL_VERSIONS ${PYTHON_VERSION_STRING})
+#  else()
+#    message(ERROR FATAL "Unable to find Python")
+#  endif()
+#endif()
 
 # Find Python libs
-find_package(PythonLibs)
-message(STATUS "Using Python include directory ${PYTHON_INCLUDE_DIR}")
+#find_package(PythonLibs)
+#message(STATUS "Using Python include directory ${PYTHON_INCLUDE_DIR}")
 
 #Dependencies
 
@@ -157,7 +159,10 @@ set(LIBXML2_LIB_DIR ${LIBXML2_PREFIX}/lib)
 #include_directories(${CMAKE_CURRENT_SOURCE_DIR})
 #include_directories(${CMAKE_CURRENT_BINARY_DIR}) #we have to do this to get the generated header
 #
-add_subdirectory(graphfab)
+
+add_subdirectory(lib/googletest)
+#add_subdirectory(graphfab)
+add_subdirectory(test)
 #
 ##add_subdirectory(sandbox)
 ##
