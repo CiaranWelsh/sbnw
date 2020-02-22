@@ -38,10 +38,10 @@
 
 //== INCLUDES ========================================================================
 
-#include "graphfab/core/SagittariusCore.h"
-#include "graphfab/point.h"
-#include "graphfab/box.h"
-#include "graphfab/math/sign_mag.h"
+#include "sbnw/core/SagittariusCore.h"
+#include "sbnw/point.h"
+#include "sbnw/box.h"
+#include "sbnw/math/sign_mag.h"
 
 #include <math.h>
 

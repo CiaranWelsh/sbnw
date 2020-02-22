@@ -29,8 +29,8 @@
 
 //== INCLUDES ========================================================================
 
-#include "graphfab/core/SagittariusCore.h"
-#include "graphfab/error.h"
+#include "sbnw/core/SagittariusCore.h"
+#include "sbnw/error.h"
 #include "network.h"
 
 #include <exception>

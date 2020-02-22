@@ -38,9 +38,9 @@
 
 //== INCLUDES ========================================================================
 
-#include "graphfab/core/SagittariusCore.h"
+#include "sbnw/core/SagittariusCore.h"
 #include "point.h"
-#include "graphfab/math/transform.h"
+#include "sbnw/math/transform.h"
 #include "arrowhead.h"
 
 //-- C++ code --

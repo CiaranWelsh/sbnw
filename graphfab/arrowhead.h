@@ -42,9 +42,9 @@
 
 //== INCLUDES ========================================================================
 
-#include "graphfab/core/SagittariusCore.h"
+#include "sbnw/core/SagittariusCore.h"
 #include "point.h"
-#include "graphfab/math/transform.h"
+#include "sbnw/math/transform.h"
 
 //-- C++ code --
 #ifdef __cplusplus
@@ -188,7 +188,7 @@ namespace Graphfab {
   class ArrowheadStyleControl<SubstrateArrowhead> {
   public:
     static void set(ArrowheadStyle val) {
-//       std::cerr << "graphfab: set style for substrate arrowhead\n";
+//       std::cerr << "sbnw: set style for substrate arrowhead\n";
       sub_arrow_style_ = val;
     }
 
@@ -201,7 +201,7 @@ namespace Graphfab {
   class ArrowheadStyleControl<ProductArrowhead> {
   public:
     static void set(ArrowheadStyle val) {
-//       std::cerr << "graphfab: set style for product arrowhead\n";
+//       std::cerr << "sbnw: set style for product arrowhead\n";
       prod_arrow_style_ = val;
     }
 
@@ -214,7 +214,7 @@ namespace Graphfab {
   class ArrowheadStyleControl<ActivatorArrowhead> {
   public:
     static void set(ArrowheadStyle val) {
-//       std::cerr << "graphfab: set style for activator arrowhead\n";
+//       std::cerr << "sbnw: set style for activator arrowhead\n";
       act_arrow_style_ = val;
     }
 
@@ -227,7 +227,7 @@ namespace Graphfab {
   class ArrowheadStyleControl<InhibitorArrowhead> {
   public:
     static void set(ArrowheadStyle val) {
-//       std::cerr << "graphfab: set style for inhibitor arrowhead\n";
+//       std::cerr << "sbnw: set style for inhibitor arrowhead\n";
       inh_arrow_style_ = val;
     }
 
@@ -240,7 +240,7 @@ namespace Graphfab {
   class ArrowheadStyleControl<ModifierArrowhead> {
   public:
     static void set(ArrowheadStyle val) {
-//       std::cerr << "graphfab: set style for modifier arrowhead\n";
+//       std::cerr << "sbnw: set style for modifier arrowhead\n";
       mod_arrow_style_ = val;
     }
 

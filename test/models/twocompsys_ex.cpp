@@ -27,15 +27,15 @@
 
 //== BEGINNING OF CODE ===============================================================
 
-#include "graphfab/core/SagittariusCore.h"
+#include "sbnw/core/SagittariusCore.h"
 
 #include <stdio.h>
 #include <string.h>
 #include <malloc.h>
 
-#include "graphfab/autolayoutSBML.h"
-#include "graphfab/sbml/layout.h"
-#include "graphfab/fr.h"
+#include "sbnw/autolayoutSBML.h"
+#include "sbnw/sbml/layout.h"
+#include "sbnw/fr.h"
 #include "gtest/gtest.h"
 
 #include <stdlib.h>

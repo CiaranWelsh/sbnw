@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Created by Graphfab on 2015-02-04 13:27 with libSBML version 5.11.0. -->
+<!-- Created by sbnw on 2015-02-04 13:27 with libSBML version 5.11.0. -->
 <sbml xmlns="http://www.sbml.org/sbml/level2" level="2" version="1">
   <model>
     <annotation>
@@ -492,17 +492,17 @@
       </layout:listOfLayouts>
     </annotation>
     <listOfCompartments>
-      <compartment id="graphfab_default_compartment" size="1" constant="false"/>
+      <compartment id="sbnw_default_compartment" size="1" constant="false"/>
     </listOfCompartments>
     <listOfSpecies>
-      <species id="MKKK" compartment="graphfab_default_compartment" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="MKKK_P" compartment="graphfab_default_compartment" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="MKK" compartment="graphfab_default_compartment" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="MKK_P" compartment="graphfab_default_compartment" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="MKK_PP" compartment="graphfab_default_compartment" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="MAPK" compartment="graphfab_default_compartment" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="MAPK_P" compartment="graphfab_default_compartment" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="MAPK_PP" compartment="graphfab_default_compartment" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MKKK" compartment="sbnw_default_compartment" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MKKK_P" compartment="sbnw_default_compartment" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MKK" compartment="sbnw_default_compartment" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MKK_P" compartment="sbnw_default_compartment" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MKK_PP" compartment="sbnw_default_compartment" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MAPK" compartment="sbnw_default_compartment" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MAPK_P" compartment="sbnw_default_compartment" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MAPK_PP" compartment="sbnw_default_compartment" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
     </listOfSpecies>
     <listOfReactions>
       <reaction id="J0" reversible="false" fast="false">

@@ -4,12 +4,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "D:/sbnw/test/NotARealTest.cpp" "D:/sbnw/cmake-build-debug/test/CMakeFiles/Test.dir/NotARealTest.cpp.obj"
+  "D:/sbnw/test/NetworkTests.cpp" "D:/sbnw/cmake-build-debug/test/CMakeFiles/Test.dir/NetworkTests.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "MSVC")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "../"
+  "C:/Program Files (x86)/libsbml/include"
   "../lib/googletest/googletest/include"
   "../lib/googletest/googletest"
   )
@@ -18,6 +20,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 set(CMAKE_TARGET_LINKED_INFO_FILES
   "D:/sbnw/cmake-build-debug/lib/googletest/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
   "D:/sbnw/cmake-build-debug/lib/googletest/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
+  "D:/sbnw/cmake-build-debug/sbnw/CMakeFiles/sbnw-static.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

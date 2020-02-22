@@ -27,8 +27,8 @@
 
 //== BEGINNING OF CODE ===============================================================
 
-#include "graphfab/layout.h"
-#include "graphfab/fr.h"
+#include "sbnw/layout.h"
+#include "sbnw/fr.h"
 
 #include <stdlib.h>
 #include <stdio.h>

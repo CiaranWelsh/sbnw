@@ -34,7 +34,7 @@
 #include <utility>
 
 //- SPECIFIC -//
-#include "graphfab/core/SagittariusException.hpp"
+#include "sbnw/core/SagittariusException.hpp"
 
 namespace Graphfab
 {

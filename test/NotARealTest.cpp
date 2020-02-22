@@ -3,8 +3,14 @@
 //
 
 #include "gtest/gtest.h"
+#include "sbnw/Network.h"
 
 
-TEST(tests, test1){
+TEST(tests, test1) {
     ASSERT_EQ(5, 4);
 }
+
+
+
+
+

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Created by Graphfab on 2014-12-17 13:17 with libSBML version 5.11.0. -->
+<!-- Created by sbnw on 2014-12-17 13:17 with libSBML version 5.11.0. -->
 <sbml xmlns="http://www.sbml.org/sbml/level2" level="2" version="1">
   <model>
     <annotation>

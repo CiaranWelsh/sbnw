@@ -29,10 +29,10 @@
 
 //== INCLUDES ========================================================================
 
-#include "graphfab/core/SagittariusCore.h"
+#include "sbnw/core/SagittariusCore.h"
 #include "box.h"
-#include "graphfab/math/sign_mag.h"
-#include "graphfab/math/allen.h"
+#include "sbnw/math/sign_mag.h"
+#include "sbnw/math/allen.h"
 
 namespace Graphfab {
     

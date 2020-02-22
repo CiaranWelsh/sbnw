@@ -27,8 +27,8 @@
 
 //== BEGINNING OF CODE ===============================================================
 
-#include "graphfab/core/SagittariusCore.h"
-#include "graphfab/math/cubic.h"
+#include "sbnw/core/SagittariusCore.h"
+#include "sbnw/math/cubic.h"
 
 #include <iostream>
 

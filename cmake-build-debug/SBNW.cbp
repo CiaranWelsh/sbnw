@@ -5,7 +5,7 @@
 		<Option title="SBNW"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="msvc8"/>
-		<Option virtualFolders="CMake Files\;CMake Files\lib\;CMake Files\lib\googletest\;CMake Files\lib\googletest\googlemock\;CMake Files\lib\googletest\googlemock\cmake\;CMake Files\lib\googletest\googletest\;CMake Files\lib\googletest\googletest\cmake\;CMake Files\test\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\lib\;CMake Files\lib\googletest\;CMake Files\lib\googletest\googlemock\;CMake Files\lib\googletest\googlemock\cmake\;CMake Files\lib\googletest\googletest\;CMake Files\lib\googletest\googletest\cmake\;CMake Files\sbnw\;CMake Files\test\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="D:/sbnw/cmake-build-debug"/>
@@ -275,6 +275,56 @@
 					<DistClean command="nmake /NOLOGO /f D:\sbnw\cmake-build-debug\lib\googletest\googletest\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="sbnw-static">
+				<Option output="D:/sbnw/cmake-build-debug/sbnw/sbnw-static.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/sbnw/cmake-build-debug/sbnw"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/sbnw"/>
+					<Add directory="C:/Program Files (x86)/libsbml/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\sbnw\cmake-build-debug\sbnw\Makefile VERBOSE=1 sbnw-static"/>
+					<CompileFile command="nmake /NOLOGO /f D:\sbnw\cmake-build-debug\sbnw\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\sbnw\cmake-build-debug\sbnw\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\sbnw\cmake-build-debug\sbnw\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="sbnw-static/fast">
+				<Option output="D:/sbnw/cmake-build-debug/sbnw/sbnw-static.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/sbnw/cmake-build-debug/sbnw"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/sbnw"/>
+					<Add directory="C:/Program Files (x86)/libsbml/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\sbnw\cmake-build-debug\sbnw\Makefile VERBOSE=1 sbnw-static/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\sbnw\cmake-build-debug\sbnw\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\sbnw\cmake-build-debug\sbnw\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\sbnw\cmake-build-debug\sbnw\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="Test">
 				<Option output="D:/sbnw/cmake-build-debug/test/Test.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir=""/>
@@ -282,6 +332,8 @@
 				<Option type="1"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
+					<Add directory="D:/sbnw"/>
+					<Add directory="C:/Program Files (x86)/libsbml/include"/>
 					<Add directory="D:/sbnw/lib/googletest/googletest/include"/>
 					<Add directory="D:/sbnw/lib/googletest/googletest"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\ATLMFC\include"/>
@@ -307,6 +359,8 @@
 				<Option type="1"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
+					<Add directory="D:/sbnw"/>
+					<Add directory="C:/Program Files (x86)/libsbml/include"/>
 					<Add directory="D:/sbnw/lib/googletest/googletest/include"/>
 					<Add directory="D:/sbnw/lib/googletest/googletest"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\ATLMFC\include"/>
@@ -341,7 +395,13 @@
 		<Unit filename="D:/sbnw/lib/googletest/googletest/src/gtest_main.cc">
 			<Option target="gtest_main"/>
 		</Unit>
-		<Unit filename="D:/sbnw/test/NotARealTest.cpp">
+		<Unit filename="D:/sbnw/sbnw/Network.cpp">
+			<Option target="sbnw-static"/>
+		</Unit>
+		<Unit filename="D:/sbnw/sbnw/Network.h">
+			<Option target="sbnw-static"/>
+		</Unit>
+		<Unit filename="D:/sbnw/test/NetworkTests.cpp">
 			<Option target="Test"/>
 		</Unit>
 		<Unit filename="D:/sbnw/CMakeLists.txt">
@@ -373,6 +433,9 @@
 		</Unit>
 		<Unit filename="D:/sbnw/lib/googletest/googletest/cmake/internal_utils.cmake">
 			<Option virtualFolder="CMake Files\lib\googletest\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="D:/sbnw/sbnw/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\sbnw\"/>
 		</Unit>
 		<Unit filename="D:/sbnw/test/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\test\"/>

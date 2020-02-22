@@ -39,8 +39,8 @@
 
 //== INCLUDES ========================================================================
 
-#include "graphfab/core/SagittariusPlatform.h"
-#include "graphfab/core/config.h"
+#include "sbnw/core/SagittariusPlatform.h"
+#include "sbnw/core/config.h"
 
 
 #ifdef __cplusplus
@@ -127,7 +127,7 @@ namespace Graphfab
     #endif//End of C++ typedefs
     
 #ifdef __cplusplus
-} //namespace Graphfab
+} //namespace sbnw
 #endif
 
 

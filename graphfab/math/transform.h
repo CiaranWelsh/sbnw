@@ -38,9 +38,9 @@
 
 //== INCLUDES ========================================================================
 
-#include "graphfab/core/SagittariusCore.h"
-#include "graphfab/point.h"
-#include "graphfab/box.h"
+#include "sbnw/core/SagittariusCore.h"
+#include "sbnw/point.h"
+#include "sbnw/box.h"
 
 //-- C++ code --
 #ifdef __cplusplus

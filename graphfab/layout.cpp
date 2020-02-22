@@ -29,16 +29,16 @@
 
 //== INCLUDES ========================================================================
 
-#include "graphfab/core/SagittariusCore.h"
+#include "sbnw/core/SagittariusCore.h"
 #include "layout.h"
-#include "graphfab/error.h"
+#include "sbnw/error.h"
 #include "network.h"
 #include "canvas.h"
 #include "box.h"
 #include "point.h"
-#include "graphfab/math/round.h"
-#include "graphfab/math/geom.h"
-#include "graphfab/math/transform.h"
+#include "sbnw/math/round.h"
+#include "sbnw/math/geom.h"
+#include "sbnw/math/transform.h"
 #include <cstring>
 
 #include "sbml/SBMLTypes.h"
@@ -560,7 +560,7 @@ libsbml::SBMLDocument* populateSBMLdoc(gf_SBMLModel* m, gf_layoutInfo* l) {
                 if(com)
                     species->setCompartment(com->getId());
                 else {
-                    species->setCompartment("graphfab_default_compartment");
+                    species->setCompartment("sbnw_default_compartment");
                     create_default_compartment = true;
                 }
                 species->setInitialConcentration(0.);
@@ -575,12 +575,12 @@ libsbml::SBMLDocument* populateSBMLdoc(gf_SBMLModel* m, gf_layoutInfo* l) {
         if (create_default_compartment) {
             for(Network::ConstCompIt i=net->CompsBegin(); i!=net->CompsEnd(); ++i) {
                 const Graphfab::Compartment* c = *i;
-                if (c->getId() == "graphfab_default_compartment")
+                if (c->getId() == "sbnw_default_compartment")
                     // already exists
                     goto skip_default_comp;
             }
             libsbml::Compartment* compartment = model->createCompartment();
-            compartment->setId("graphfab_default_compartment");
+            compartment->setId("sbnw_default_compartment");
             compartment->setSize(1.);
             compartment->setConstant(false);
             int sbo_result = compartment->setSBOTerm(410);

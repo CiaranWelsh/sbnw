@@ -73,7 +73,7 @@ set(SOURCES
         #        core/SagittariusPlatformWin.h
         #        core/SagittariusPrefetch.h
         #        draw/magick.h
-        NotARealClass.cpp
+        ../sbnw/NotARealClass.cpp
 #        error.h
 #        io.h
 #        layout.h
@@ -105,26 +105,21 @@ configure_file(sphinx/source/conf.py sphinx/source/conf.py)
 configure_file(sphinx/source/index.rst sphinx/source/index.rst COPYONLY)
 configure_file(sphinx/Makefile sphinx/Makefile COPYONLY)
 
+
 # ** Shared Library **
-add_library(sbnw SHARED ${SOURCES} NotARealClass.cpp NotARealClass.h ../test/NotARealTest.cpp)
+add_library(sbnw SHARED ${SOURCES} ../test/NotARealTest.cpp)
+#Link in dependencies
+message(STATUS "LIBSBML_INCLUDE_DIR ${LIBSBML_INCLUDE_DIR}")
+message(STATUS "LIBSBML_STATIC_LIBRARY ${LIBSBML_STATIC_LIBRARY}")
 
 target_include_directories(sbnw PUBLIC ${CMAKE_SOURCE_DIR} ${LIBSBML_INCLUDE_DIR})
 
-set_target_properties(sbnw PROPERTIES COMPILE_DEFINITIONS SBNW_CLIENT_BUILD=0)
-
-#Link in dependencies
-
-##SBML
-#     if(SBNW_LINK_TO_STATIC_LIBSBML)
-target_link_libraries(sbnw ${LIBSBML_STATIC_LIBRARY}) # libxml2 libbz2 zdll libiconv Ws2_32
+target_link_libraries(sbnw ${LIBSBML_STATIC_LIBRARY})
 
 
 # ** Static Library **
 if (BUILD_STATIC_LIB)
     add_library(sbnw_static STATIC ${SOURCES})
-
-    # Link in dependencies
-    # SBML
     target_link_libraries(sbnw_static ${LIBSBML_STATIC_LIBRARY})
 endif ()
 

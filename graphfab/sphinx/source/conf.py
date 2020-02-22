@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
-# graphfab documentation build configuration file, created by
+# sbnw documentation build configuration file, created by
 # sphinx-quickstart on Tue Aug 27 16:06:39 2013.
 #
 # This file is execfile()d with the current directory set to its containing dir.
@@ -18,7 +18,7 @@ import sys, os
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #sys.path.insert(0, os.path.abspath('.'))
-sys.path.insert(0, '@CMAKE_BINARY_DIR@/graphfab/build/lib.linux-x86_64-3.3')
+sys.path.insert(0, '@CMAKE_BINARY_DIR@/sbnw/build/lib.linux-x86_64-3.3')
 
 # -- General configuration -----------------------------------------------------
 
@@ -187,7 +187,7 @@ latex_elements = {
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'graphfab.tex', 'graphfab Documentation',
+  ('index', 'sbnw.tex', 'sbnw Documentation',
    'JK Medley', 'manual'),
 ]
 

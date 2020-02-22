@@ -29,9 +29,9 @@
 
 //== INCLUDES ========================================================================
 
-#include "graphfab/core/SagittariusCore.h"
-#include "graphfab/math/geom.h"
-#include "graphfab/math/cubic.h"
+#include "sbnw/core/SagittariusCore.h"
+#include "sbnw/math/geom.h"
+#include "sbnw/math/cubic.h"
 
 namespace Graphfab {
 

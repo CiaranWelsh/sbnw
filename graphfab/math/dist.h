@@ -38,8 +38,8 @@
 
 //== INCLUDES ========================================================================
 
-#include "graphfab/core/SagittariusCore.h"
-#include "graphfab/point.h"
+#include "sbnw/core/SagittariusCore.h"
+#include "sbnw/point.h"
 
 //-- C++ code --
 #ifdef __cplusplus

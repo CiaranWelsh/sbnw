@@ -29,15 +29,15 @@
 
 //== INCLUDES ========================================================================
 
-//#include "graphfab/core/SagittariusCore.h"
-#include "graphfab/error.h"
+//#include "sbnw/core/SagittariusCore.h"
+#include "sbnw/error.h"
 #include "network.h"
-#include "graphfab/io.h"
-#include "graphfab/math/rand_unif.h"
-#include "graphfab/math/dist.h"
-#include "graphfab/math/allen.h"
-#include "graphfab/math/sign_mag.h"
-#include "graphfab/math/geom.h"
+#include "sbnw/io.h"
+#include "sbnw/math/rand_unif.h"
+#include "sbnw/math/dist.h"
+#include "sbnw/math/allen.h"
+#include "sbnw/math/sign_mag.h"
+#include "sbnw/math/geom.h"
 
 #include <exception>
 #include <typeinfo>
@@ -2064,7 +2064,7 @@ namespace Graphfab {
             // assume a compartment with the id "default" or "compartment" represents
             // a default, non-visual compartment, so discard it from the model
             if (comp->getId() != "default" && comp->getId() != "compartment" &&
-                comp->getId() != "graphfab_default_compartment" &&
+                comp->getId() != "sbnw_default_compartment" &&
                 (!haveDefaultCompartmentId() || getDefaultCompartmentId() != comp->getId())) {
                 auto *c = new Compartment();
 

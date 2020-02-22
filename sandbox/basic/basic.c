@@ -27,17 +27,17 @@
 
 //== BEGINNING OF CODE ===============================================================
 
-#include "graphfab/core/SagittariusCore.h"
+#include "sbnw/core/SagittariusCore.h"
 
 #include <stdio.h>
 #include <string.h>
 
-#include "graphfab/autolayoutSBML.h"
-#include "graphfab/layout.h"
-#include "graphfab/fr.h"
+#include "sbnw/autolayoutSBML.h"
+#include "sbnw/layout.h"
+#include "sbnw/fr.h"
 
 #if SBNW_USE_MAGICK
-#include "graphfab/draw/magick.h"
+#include "sbnw/draw/magick.h"
 #endif
 
 #include <stdlib.h>
@@ -130,7 +130,7 @@ int main(int argc, char* argv[]) {
     char* buf;
     size_t bytes_read;
     int chr;
-    const char* defaultout = "/tmp/graphfab_out.xml";
+    const char* defaultout = "/tmp/sbnw_out.xml";
     const char* outfile = defaultout;
     
     size_t size=0, n;

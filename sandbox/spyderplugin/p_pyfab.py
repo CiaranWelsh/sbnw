@@ -11,7 +11,7 @@ else:
   import builtin
   builtin.p_pyfab_spyder_env = True
 
-#pyfab_app = imp.load_source('pyfab_app', '/home/poltergeist/home/devel/install/graphfab-trunk/python2/site-packages/pyfab_app.py')
+#pyfab_app = imp.load_source('pyfab_app', '/home/poltergeist/home/devel/install/sbnw-trunk/python2/site-packages/pyfab_app.py')
 #print('pyfab_app loaded source')
 
 import pyfab_app

@@ -4,14 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "D:/sbnw/graphfab/NotARealClass.cpp" "D:/sbnw/cmake-build-debug/graphfab/CMakeFiles/sbnw.dir/NotARealClass.cpp.obj"
+  "D:/sbnw/sbnw/NotARealClass.cpp" "D:/sbnw/cmake-build-debug/graphfab/CMakeFiles/sbnw.dir/__/sbnw/NotARealClass.cpp.obj"
   "D:/sbnw/test/NotARealTest.cpp" "D:/sbnw/cmake-build-debug/graphfab/CMakeFiles/sbnw.dir/__/test/NotARealTest.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "MSVC")
 
 # Preprocessor definitions for this target.
 set(CMAKE_TARGET_DEFINITIONS_CXX
-  "SBNW_CLIENT_BUILD=0"
   "sbnw_EXPORTS"
   )
 

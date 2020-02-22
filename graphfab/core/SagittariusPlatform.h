@@ -39,7 +39,7 @@
 
 //== BEGINNING OF CODE ===============================================================
 
-#include "graphfab/core/SagittariusConfigure.h"
+#include "sbnw/core/SagittariusConfigure.h"
 
 #ifndef __SAGITTARIUS_PLATFORM_H_
 #define __SAGITTARIUS_PLATFORM_H_

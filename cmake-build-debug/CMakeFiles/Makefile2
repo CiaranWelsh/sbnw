@@ -55,18 +55,21 @@ CMAKE_BINARY_DIR = D:\sbnw\cmake-build-debug
 
 # The main recursive "all" target.
 all: lib\googletest\all
+all: sbnw\all
 all: test\all
 
 .PHONY : all
 
 # The main recursive "clean" target.
 clean: lib\googletest\clean
+clean: sbnw\clean
 clean: test\clean
 
 .PHONY : clean
 
 # The main recursive "preinstall" target.
 preinstall: lib\googletest\preinstall
+preinstall: sbnw\preinstall
 preinstall: test\preinstall
 
 .PHONY : preinstall
@@ -240,6 +243,51 @@ lib\googletest\googletest\CMakeFiles\gtest_main.dir\clean:
 .PHONY : lib\googletest\googletest\CMakeFiles\gtest_main.dir\clean
 
 #=============================================================================
+# Directory level rules for directory sbnw
+
+# Recursive "all" directory target.
+sbnw\all: sbnw\CMakeFiles\sbnw-static.dir\all
+
+.PHONY : sbnw\all
+
+# Recursive "clean" directory target.
+sbnw\clean: sbnw\CMakeFiles\sbnw-static.dir\clean
+
+.PHONY : sbnw\clean
+
+# Recursive "preinstall" directory target.
+sbnw\preinstall:
+
+.PHONY : sbnw\preinstall
+
+#=============================================================================
+# Target rules for target sbnw/CMakeFiles/sbnw-static.dir
+
+# All Build rule for target.
+sbnw\CMakeFiles\sbnw-static.dir\all:
+	$(MAKE) -f sbnw\CMakeFiles\sbnw-static.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw-static.dir\depend
+	$(MAKE) -f sbnw\CMakeFiles\sbnw-static.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw-static.dir\build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\sbnw\cmake-build-debug\CMakeFiles --progress-num=14,15 "Built target sbnw-static"
+.PHONY : sbnw\CMakeFiles\sbnw-static.dir\all
+
+# Build rule for subdir invocation for target.
+sbnw\CMakeFiles\sbnw-static.dir\rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\sbnw\cmake-build-debug\CMakeFiles 2
+	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw-static.dir\all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\sbnw\cmake-build-debug\CMakeFiles 0
+.PHONY : sbnw\CMakeFiles\sbnw-static.dir\rule
+
+# Convenience name for target.
+sbnw-static: sbnw\CMakeFiles\sbnw-static.dir\rule
+
+.PHONY : sbnw-static
+
+# clean rule for target.
+sbnw\CMakeFiles\sbnw-static.dir\clean:
+	$(MAKE) -f sbnw\CMakeFiles\sbnw-static.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw-static.dir\clean
+.PHONY : sbnw\CMakeFiles\sbnw-static.dir\clean
+
+#=============================================================================
 # Directory level rules for directory test
 
 # Recursive "all" directory target.
@@ -261,8 +309,9 @@ test\preinstall:
 # Target rules for target test/CMakeFiles/Test.dir
 
 # All Build rule for target.
-test\CMakeFiles\Test.dir\all: lib\googletest\googletest\CMakeFiles\gtest_main.dir\all
 test\CMakeFiles\Test.dir\all: lib\googletest\googletest\CMakeFiles\gtest.dir\all
+test\CMakeFiles\Test.dir\all: lib\googletest\googletest\CMakeFiles\gtest_main.dir\all
+test\CMakeFiles\Test.dir\all: sbnw\CMakeFiles\sbnw-static.dir\all
 	$(MAKE) -f test\CMakeFiles\Test.dir\build.make /nologo -$(MAKEFLAGS) test\CMakeFiles\Test.dir\depend
 	$(MAKE) -f test\CMakeFiles\Test.dir\build.make /nologo -$(MAKEFLAGS) test\CMakeFiles\Test.dir\build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\sbnw\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target Test"
@@ -270,7 +319,7 @@ test\CMakeFiles\Test.dir\all: lib\googletest\googletest\CMakeFiles\gtest.dir\all
 
 # Build rule for subdir invocation for target.
 test\CMakeFiles\Test.dir\rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\sbnw\cmake-build-debug\CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\sbnw\cmake-build-debug\CMakeFiles 8
 	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) test\CMakeFiles\Test.dir\all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\sbnw\cmake-build-debug\CMakeFiles 0
 .PHONY : test\CMakeFiles\Test.dir\rule

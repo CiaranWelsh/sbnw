@@ -29,16 +29,16 @@
 
 //== INCLUDES ========================================================================
 
-#include "graphfab/core/SagittariusCore.h"
+#include "sbnw/core/SagittariusCore.h"
 #include "fr.h"
 #include "canvas.h"
-#include "graphfab/math/rand_unif.h"
-#include "graphfab/math/min_max.h"
-#include "graphfab/math/dist.h"
-#include "graphfab/math/transform.h"
+#include "sbnw/math/rand_unif.h"
+#include "sbnw/math/min_max.h"
+#include "sbnw/math/dist.h"
+#include "sbnw/math/transform.h"
 
 #if SBNW_USE_MAGICK
-#include "graphfab/draw/magick.h"
+#include "sbnw/draw/magick.h"
 #endif
 
 #include <sstream>

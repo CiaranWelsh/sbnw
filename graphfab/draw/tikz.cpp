@@ -29,8 +29,8 @@
 
 //== INCLUDES ========================================================================
 
-#include "graphfab/core/SagittariusCore.h"
-#include "graphfab/draw/tikz.h"
+#include "sbnw/core/SagittariusCore.h"
+#include "sbnw/draw/tikz.h"
 #include <cstring>
 
 #include <sstream>

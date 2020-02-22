@@ -53,6 +53,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../lib/googletest/googletest/cmake/gtest.pc.in"
   "../lib/googletest/googletest/cmake/gtest_main.pc.in"
   "../lib/googletest/googletest/cmake/internal_utils.cmake"
+  "../sbnw/CMakeLists.txt"
   "../test/CMakeLists.txt"
   )
 
@@ -68,6 +69,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "lib/googletest/CMakeFiles/CMakeDirectoryInformation.cmake"
   "lib/googletest/googlemock/CMakeFiles/CMakeDirectoryInformation.cmake"
   "lib/googletest/googletest/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "sbnw/CMakeFiles/CMakeDirectoryInformation.cmake"
   "test/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
@@ -77,5 +79,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "lib/googletest/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake"
   "lib/googletest/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
   "lib/googletest/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
+  "sbnw/CMakeFiles/sbnw-static.dir/DependInfo.cmake"
   "test/CMakeFiles/Test.dir/DependInfo.cmake"
   )

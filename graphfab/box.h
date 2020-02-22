@@ -38,13 +38,13 @@
 
 //== INCLUDES ========================================================================
 
-#include "graphfab/core/SagittariusCore.h"
-#include "graphfab/math/min_max.h"
+#include "sbnw/core/SagittariusCore.h"
+#include "sbnw/math/min_max.h"
 
 //-- C++ code --
 #ifdef __cplusplus
 
-#include <graphfab/point.h>
+#include <sbnw/point.h>
 
 // #include <string>
 

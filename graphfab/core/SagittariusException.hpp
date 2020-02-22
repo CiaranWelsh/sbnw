@@ -32,9 +32,8 @@
 
 //== INCLUDES ========================================================================
 
-#include "graphfab/core/SagittariusCommon.h"
-#include "graphfab/core/SagittariusException.hpp"
-#include "graphfab/util/string.h"
+#include "sbnw/core/SagittariusCommon.h"
+#include "sbnw/core/SagittariusException.hpp"
 #include <exception>
 
 namespace Graphfab

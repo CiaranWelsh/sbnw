@@ -22,6 +22,12 @@ D:/sbnw/cmake-build-debug/lib/googletest/googletest/CMakeFiles/install/local.dir
 D:/sbnw/cmake-build-debug/lib/googletest/googletest/CMakeFiles/install.dir
 D:/sbnw/cmake-build-debug/lib/googletest/googletest/CMakeFiles/edit_cache.dir
 D:/sbnw/cmake-build-debug/lib/googletest/googletest/CMakeFiles/rebuild_cache.dir
+D:/sbnw/cmake-build-debug/sbnw/CMakeFiles/sbnw-static.dir
+D:/sbnw/cmake-build-debug/sbnw/CMakeFiles/install/local.dir
+D:/sbnw/cmake-build-debug/sbnw/CMakeFiles/install.dir
+D:/sbnw/cmake-build-debug/sbnw/CMakeFiles/edit_cache.dir
+D:/sbnw/cmake-build-debug/sbnw/CMakeFiles/rebuild_cache.dir
+D:/sbnw/cmake-build-debug/sbnw/CMakeFiles/list_install_components.dir
 D:/sbnw/cmake-build-debug/test/CMakeFiles/rebuild_cache.dir
 D:/sbnw/cmake-build-debug/test/CMakeFiles/Test.dir
 D:/sbnw/cmake-build-debug/test/CMakeFiles/install/local.dir

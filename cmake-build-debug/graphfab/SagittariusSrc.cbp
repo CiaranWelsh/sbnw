@@ -24,7 +24,6 @@
 				<Option type="3"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
-					<Add option="-DSBNW_CLIENT_BUILD=0"/>
 					<Add directory="D:/sbnw"/>
 					<Add directory="C:/Program Files (x86)/libsbml/include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\ATLMFC\include"/>
@@ -50,7 +49,6 @@
 				<Option type="3"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
-					<Add option="-DSBNW_CLIENT_BUILD=0"/>
 					<Add directory="D:/sbnw"/>
 					<Add directory="C:/Program Files (x86)/libsbml/include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\ATLMFC\include"/>
@@ -116,11 +114,11 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="D:/sbnw/graphfab/NotARealClass.cpp">
+		<Unit filename="D:/sbnw/sbnw/NotARealClass.cpp">
 			<Option target="sbnw"/>
 			<Option target="sbnw_static"/>
 		</Unit>
-		<Unit filename="D:/sbnw/graphfab/NotARealClass.h">
+		<Unit filename="D:/sbnw/sbnw/NotARealClass.h">
 			<Option target="sbnw"/>
 		</Unit>
 		<Unit filename="D:/sbnw/test/NotARealTest.cpp">

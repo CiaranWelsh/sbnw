@@ -174,38 +174,38 @@ Test\fast:
 	cd D:\sbnw\cmake-build-debug\test
 .PHONY : Test\fast
 
-NotARealTest.obj: NotARealTest.cpp.obj
+NetworkTests.obj: NetworkTests.cpp.obj
 
-.PHONY : NotARealTest.obj
+.PHONY : NetworkTests.obj
 
 # target to build an object file
-NotARealTest.cpp.obj:
+NetworkTests.cpp.obj:
 	cd D:\sbnw\cmake-build-debug
-	$(MAKE) -f test\CMakeFiles\Test.dir\build.make /nologo -$(MAKEFLAGS) test\CMakeFiles\Test.dir\NotARealTest.cpp.obj
+	$(MAKE) -f test\CMakeFiles\Test.dir\build.make /nologo -$(MAKEFLAGS) test\CMakeFiles\Test.dir\NetworkTests.cpp.obj
 	cd D:\sbnw\cmake-build-debug\test
-.PHONY : NotARealTest.cpp.obj
+.PHONY : NetworkTests.cpp.obj
 
-NotARealTest.i: NotARealTest.cpp.i
+NetworkTests.i: NetworkTests.cpp.i
 
-.PHONY : NotARealTest.i
+.PHONY : NetworkTests.i
 
 # target to preprocess a source file
-NotARealTest.cpp.i:
+NetworkTests.cpp.i:
 	cd D:\sbnw\cmake-build-debug
-	$(MAKE) -f test\CMakeFiles\Test.dir\build.make /nologo -$(MAKEFLAGS) test\CMakeFiles\Test.dir\NotARealTest.cpp.i
+	$(MAKE) -f test\CMakeFiles\Test.dir\build.make /nologo -$(MAKEFLAGS) test\CMakeFiles\Test.dir\NetworkTests.cpp.i
 	cd D:\sbnw\cmake-build-debug\test
-.PHONY : NotARealTest.cpp.i
+.PHONY : NetworkTests.cpp.i
 
-NotARealTest.s: NotARealTest.cpp.s
+NetworkTests.s: NetworkTests.cpp.s
 
-.PHONY : NotARealTest.s
+.PHONY : NetworkTests.s
 
 # target to generate assembly for a file
-NotARealTest.cpp.s:
+NetworkTests.cpp.s:
 	cd D:\sbnw\cmake-build-debug
-	$(MAKE) -f test\CMakeFiles\Test.dir\build.make /nologo -$(MAKEFLAGS) test\CMakeFiles\Test.dir\NotARealTest.cpp.s
+	$(MAKE) -f test\CMakeFiles\Test.dir\build.make /nologo -$(MAKEFLAGS) test\CMakeFiles\Test.dir\NetworkTests.cpp.s
 	cd D:\sbnw\cmake-build-debug\test
-.PHONY : NotARealTest.cpp.s
+.PHONY : NetworkTests.cpp.s
 
 # Help Target
 help:
@@ -219,9 +219,9 @@ help:
 	@echo ... install
 	@echo ... edit_cache
 	@echo ... list_install_components
-	@echo ... NotARealTest.obj
-	@echo ... NotARealTest.i
-	@echo ... NotARealTest.s
+	@echo ... NetworkTests.obj
+	@echo ... NetworkTests.i
+	@echo ... NetworkTests.s
 .PHONY : help
 
 

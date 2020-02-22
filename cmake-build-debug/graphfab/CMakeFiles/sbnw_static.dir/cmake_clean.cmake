@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/sbnw_static.dir/NotARealClass.cpp.obj"
+  "CMakeFiles/sbnw_static.dir/__/sbnw/NotARealClass.cpp.obj"
   "sbnw_static.lib"
   "sbnw_static.pdb"
 )

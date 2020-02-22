@@ -13,7 +13,7 @@ endif(MINGW)
 
 #Internal Options
 set(SBNW_CLIENT_BUILD 0)
-set(SBNW_WIN_COPY_DEPS_TO_INSTALL ON CACHE BOOL "When true, libraries that graphfab depends on (libSBML and its dependencies) will be copied to the graphfab installation directory")
+set(SBNW_WIN_COPY_DEPS_TO_INSTALL ON CACHE BOOL "When true, libraries that sbnw depends on (libSBML and its dependencies) will be copied to the sbnw installation directory")
 set(SBNW_DEBUG_LEVEL 2 CACHE INTEGER "Verbosity of debug checks, must be greater than zero")
 
 set(SBNW_LINK_TO_STATIC_LIBSBML ON CACHE BOOL "Link to a static version of libSBML where available")

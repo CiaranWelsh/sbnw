@@ -5,7 +5,7 @@
 		<Option title="gtest"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="msvc8"/>
-		<Option virtualFolders="CMake Files\;CMake Files\lib\;CMake Files\lib\googletest\;CMake Files\lib\googletest\googlemock\;CMake Files\lib\googletest\googlemock\cmake\;CMake Files\lib\googletest\googletest\;CMake Files\lib\googletest\googletest\cmake\;CMake Files\test\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\lib\;CMake Files\lib\googletest\;CMake Files\lib\googletest\googlemock\;CMake Files\lib\googletest\googlemock\cmake\;CMake Files\lib\googletest\googletest\;CMake Files\lib\googletest\googletest\cmake\;CMake Files\sbnw\;CMake Files\test\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="D:/sbnw/cmake-build-debug/lib/googletest/googletest"/>
@@ -153,6 +153,9 @@
 		</Unit>
 		<Unit filename="D:/sbnw/lib/googletest/googletest/cmake/internal_utils.cmake">
 			<Option virtualFolder="CMake Files\lib\googletest\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="D:/sbnw/sbnw/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\sbnw\"/>
 		</Unit>
 		<Unit filename="D:/sbnw/test/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\test\"/>

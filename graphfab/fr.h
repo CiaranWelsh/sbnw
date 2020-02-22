@@ -38,10 +38,10 @@
 
 //== INCLUDES ========================================================================
 
-#include "graphfab/core/SagittariusCore.h"
+#include "sbnw/core/SagittariusCore.h"
 #include "canvas.h"
 #include "network.h"
-#include "graphfab/layout.h"
+#include "sbnw/layout.h"
 
 //-- C code --
 

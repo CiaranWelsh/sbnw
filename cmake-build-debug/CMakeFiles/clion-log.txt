@@ -1,5 +1,14 @@
 C:\Users\cwelsh\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\193.6494.38\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - NMake Makefiles" D:\sbnw
 -- CMAKE_CURRENT_BINARY_DIR D:/sbnw/cmake-build-debug/test
+-- 
+LIBSBML_PREFIX             C:/Program Files (x86)/libsbml
+LIBSBML_INCLUDE_DIR        C:/Program Files (x86)/libsbml/include
+LIBSBML_BIN_DIR            C:/Program Files (x86)/libsbml/bin
+LIBSBML_LIB_DIR            C:/Program Files (x86)/libsbml/lib
+LIBSBML_STATIC_LIBRARY     C:/Program Files (x86)/libsbml/lib/libsbml-static.lib
+LIBXML2_PREFIX             C:/Program Files (x86)/libxml2
+LIBXML2_LIB_DIR            C:/Program Files (x86)/libxml2/lib
+        
 -- Configuring done
 -- Generating done
 -- Build files have been written to: D:/sbnw/cmake-build-debug

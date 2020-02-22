@@ -33,7 +33,7 @@
 #include <sstream>
 
 //- SPECIFIC -//
-#include "graphfab/core/SagittariusCommon.h"
+#include "sbnw/core/SagittariusCommon.h"
 
 namespace Graphfab
 {

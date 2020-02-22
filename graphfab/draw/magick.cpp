@@ -29,11 +29,11 @@
 
 //== INCLUDES ========================================================================
 
-#include "graphfab/core/SagittariusCore.h"
-#include "graphfab/draw/magick.h"
-#include "graphfab/network.h"
-#include "graphfab/layoutall.h"
-#include "graphfab/math/transform.h"
+#include "sbnw/core/SagittariusCore.h"
+#include "sbnw/draw/magick.h"
+#include "sbnw/network.h"
+#include "sbnw/layoutall.h"
+#include "sbnw/math/transform.h"
 
 #include <wand/MagickWand.h>
 

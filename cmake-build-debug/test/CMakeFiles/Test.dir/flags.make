@@ -6,5 +6,5 @@ CXX_FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -MDd
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -ID:\sbnw\lib\googletest\googletest\include -ID:\sbnw\lib\googletest\googletest 
+CXX_INCLUDES = -ID:\sbnw -IC:\PROGRA~2\libsbml\include -ID:\sbnw\lib\googletest\googletest\include -ID:\sbnw\lib\googletest\googletest 
 
