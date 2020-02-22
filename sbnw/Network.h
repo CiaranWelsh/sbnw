@@ -63,7 +63,7 @@ namespace sbnw {
 
     std::string eltTypeToStr(NetworkEltType t);
 
-    void dumpEltType(std::ostream& os, const NetworkEltType t, uint32_t ind);
+    void dumpEltType(std::ostream& os, NetworkEltType t, uint32_t ind);
 
     /// Returns true if either a or b equals z
     inline bool typeMatchEither(const NetworkEltType a, const NetworkEltType b, const NetworkEltType z) {

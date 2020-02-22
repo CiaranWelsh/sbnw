@@ -47,8 +47,9 @@
 static std::string default_comp_id_;
 using namespace sbnw;
 
-namespace Graphfab {
+namespace sbnw {
 
+    // Does elt stand for element? Who knows? Comments would be handy here.
     std::string eltTypeToStr(const NetworkEltType t) {
         switch (t) {
             case NET_ELT_TYPE_SPEC:
@@ -61,22 +62,22 @@ namespace Graphfab {
                 throw std::invalid_argument("Invalid Type");
         }
     }
-//
-//    void dumpEltType(std::ostream &os, const NetworkEltType t, uint32 ind) {
-//        os << eltTypeToStr(t);
-//    }
-//
-//    bool haveDefaultCompartmentId() {
-//        return !default_comp_id_.empty();
-//    }
-//
-//    void setDefaultCompartmentId(const std::string &id) {
-//        default_comp_id_ = id;
-//    }
-//
-//    std::string getDefaultCompartmentId() {
-//        return default_comp_id_;
-//    }
+
+    void dumpEltType(std::ostream &os, const NetworkEltType t, uint32_t ind) {
+        os << eltTypeToStr(t);
+    }
+
+    bool haveDefaultCompartmentId() {
+        return !default_comp_id_.empty();
+    }
+
+    void setDefaultCompartmentId(const std::string &id) {
+        default_comp_id_ = id;
+    }
+
+    std::string getDefaultCompartmentId() {
+        return default_comp_id_;
+    }
 //
 //    RxnRoleType SBMLRole2GraphfabRole(SpeciesReference_t role) {
 //        switch (role) {
