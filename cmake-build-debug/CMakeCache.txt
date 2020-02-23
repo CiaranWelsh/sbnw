@@ -20,10 +20,6 @@ BUILD_GMOCK:BOOL=ON
 //Build the static version of the library
 BUILD_STATIC_LIB:BOOL=ON
 
-//For backwards compatibility, what version of CMake commands and
-// syntax should this version of CMake try to support.
-CMAKE_BACKWARDS_COMPATIBILITY:STRING=2.4
-
 //Choose the type of build, options are: None Debug Release RelWithDebInfo
 // MinSizeRel ...
 CMAKE_BUILD_TYPE:STRING=Debug
@@ -43,49 +39,49 @@ CMAKE_CODEBLOCKS_MAKE_ARGUMENTS:STRING=
 CMAKE_COLOR_MAKEFILE:BOOL=ON
 
 //CXX compiler
-CMAKE_CXX_COMPILER:FILEPATH=C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.24.28314/bin/Hostx86/x86/cl.exe
+CMAKE_CXX_COMPILER:FILEPATH=C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.24.28314/bin/Hostx64/x64/cl.exe
 
 //Flags used by the CXX compiler during all build types.
-CMAKE_CXX_FLAGS:STRING=/DWIN32 /D_WINDOWS /W3 /GR /EHsc
+CMAKE_CXX_FLAGS:STRING=/DWIN32 /D_WINDOWS /GR /EHsc
 
 //Flags used by the CXX compiler during DEBUG builds.
-CMAKE_CXX_FLAGS_DEBUG:STRING=/MDd /Zi /Ob0 /Od /RTC1
+CMAKE_CXX_FLAGS_DEBUG:STRING=/Zi /Ob0 /Od /RTC1
 
 //Flags used by the CXX compiler during MINSIZEREL builds.
-CMAKE_CXX_FLAGS_MINSIZEREL:STRING=/MD /O1 /Ob1 /DNDEBUG
+CMAKE_CXX_FLAGS_MINSIZEREL:STRING=/O1 /Ob1 /DNDEBUG
 
 //Flags used by the CXX compiler during RELEASE builds.
-CMAKE_CXX_FLAGS_RELEASE:STRING=/MD /O2 /Ob2 /DNDEBUG
+CMAKE_CXX_FLAGS_RELEASE:STRING=/O2 /Ob2 /DNDEBUG
 
 //Flags used by the CXX compiler during RELWITHDEBINFO builds.
-CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=/MD /Zi /O2 /Ob1 /DNDEBUG
+CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=/Zi /O2 /Ob1 /DNDEBUG
 
 //Libraries linked by default with all C++ applications.
 CMAKE_CXX_STANDARD_LIBRARIES:STRING=kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
 
 //C compiler
-CMAKE_C_COMPILER:FILEPATH=C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.24.28314/bin/Hostx86/x86/cl.exe
+CMAKE_C_COMPILER:FILEPATH=C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.24.28314/bin/Hostx64/x64/cl.exe
 
 //Flags used by the C compiler during all build types.
-CMAKE_C_FLAGS:STRING=/DWIN32 /D_WINDOWS /W3
+CMAKE_C_FLAGS:STRING=/DWIN32 /D_WINDOWS
 
 //Flags used by the C compiler during DEBUG builds.
-CMAKE_C_FLAGS_DEBUG:STRING=/MDd /Zi /Ob0 /Od /RTC1
+CMAKE_C_FLAGS_DEBUG:STRING=/Zi /Ob0 /Od /RTC1
 
 //Flags used by the C compiler during MINSIZEREL builds.
-CMAKE_C_FLAGS_MINSIZEREL:STRING=/MD /O1 /Ob1 /DNDEBUG
+CMAKE_C_FLAGS_MINSIZEREL:STRING=/O1 /Ob1 /DNDEBUG
 
 //Flags used by the C compiler during RELEASE builds.
-CMAKE_C_FLAGS_RELEASE:STRING=/MD /O2 /Ob2 /DNDEBUG
+CMAKE_C_FLAGS_RELEASE:STRING=/O2 /Ob2 /DNDEBUG
 
 //Flags used by the C compiler during RELWITHDEBINFO builds.
-CMAKE_C_FLAGS_RELWITHDEBINFO:STRING=/MD /Zi /O2 /Ob1 /DNDEBUG
+CMAKE_C_FLAGS_RELWITHDEBINFO:STRING=/Zi /O2 /Ob1 /DNDEBUG
 
 //Libraries linked by default with all C applications.
 CMAKE_C_STANDARD_LIBRARIES:STRING=kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
 
 //Flags used by the linker during all build types.
-CMAKE_EXE_LINKER_FLAGS:STRING=/machine:X86
+CMAKE_EXE_LINKER_FLAGS:STRING=/machine:x64
 
 //Flags used by the linker during DEBUG builds.
 CMAKE_EXE_LINKER_FLAGS_DEBUG:STRING=/debug /INCREMENTAL
@@ -151,14 +147,14 @@ CMAKE_INSTALL_SHAREDSTATEDIR:PATH=com
 CMAKE_INSTALL_SYSCONFDIR:PATH=etc
 
 //Path to a program.
-CMAKE_LINKER:FILEPATH=C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.24.28314/bin/Hostx86/x86/link.exe
+CMAKE_LINKER:FILEPATH=C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.24.28314/bin/Hostx64/x64/link.exe
 
 //Program used to build from makefiles.
 CMAKE_MAKE_PROGRAM:STRING=nmake
 
 //Flags used by the linker during the creation of modules during
 // all build types.
-CMAKE_MODULE_LINKER_FLAGS:STRING=/machine:X86
+CMAKE_MODULE_LINKER_FLAGS:STRING=/machine:x64
 
 //Flags used by the linker during the creation of modules during
 // DEBUG builds.
@@ -177,7 +173,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELEASE:STRING=/INCREMENTAL:NO
 CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO:STRING=/debug /INCREMENTAL
 
 //Path to a program.
-CMAKE_MT:FILEPATH=C:/Program Files (x86)/Windows Kits/10/bin/10.0.18362.0/x86/mt.exe
+CMAKE_MT:FILEPATH=C:/Program Files (x86)/Windows Kits/10/bin/10.0.18362.0/x64/mt.exe
 
 //Value Computed by CMake
 CMAKE_PROJECT_DESCRIPTION:STATIC=
@@ -204,7 +200,7 @@ CMAKE_PROJECT_VERSION_PATCH:STATIC=0
 CMAKE_PROJECT_VERSION_TWEAK:STATIC=
 
 //RC compiler
-CMAKE_RC_COMPILER:FILEPATH=C:/Program Files (x86)/Windows Kits/10/bin/10.0.18362.0/x86/rc.exe
+CMAKE_RC_COMPILER:FILEPATH=C:/Program Files (x86)/Windows Kits/10/bin/10.0.18362.0/x64/rc.exe
 
 //Flags for Windows Resource Compiler during all build types.
 CMAKE_RC_FLAGS:STRING=-DWIN32
@@ -223,7 +219,7 @@ CMAKE_RC_FLAGS_RELWITHDEBINFO:STRING=
 
 //Flags used by the linker during the creation of shared libraries
 // during all build types.
-CMAKE_SHARED_LINKER_FLAGS:STRING=/machine:X86
+CMAKE_SHARED_LINKER_FLAGS:STRING=/machine:x64
 
 //Flags used by the linker during the creation of shared libraries
 // during DEBUG builds.
@@ -250,7 +246,7 @@ CMAKE_SKIP_RPATH:BOOL=NO
 
 //Flags used by the linker during the creation of static libraries
 // during all build types.
-CMAKE_STATIC_LINKER_FLAGS:STRING=/machine:X86
+CMAKE_STATIC_LINKER_FLAGS:STRING=/machine:x64
 
 //Flags used by the linker during the creation of static libraries
 // during DEBUG builds.
@@ -274,63 +270,15 @@ CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
-//Enable Python bindings
-ENABLE_PYTHON:BOOL=FALSE
-
-//Enable Python 2 bindings
-ENABLE_PYTHON2_BINDINGS:BOOL=OFF
-
 //Enable Python 3 bindings
 ENABLE_PYTHON3_BINDINGS:BOOL=OFF
-
-//Single output directory for building all executables.
-EXECUTABLE_OUTPUT_PATH:PATH=
-
-//Path to a file.
-GTEST_INCLUDE_DIR:PATH=GTEST_INCLUDE_DIR-NOTFOUND
-
-//Path to a library.
-GTEST_LIBRARY:FILEPATH=GTEST_LIBRARY-NOTFOUND
-
-//Path to a library.
-GTEST_LIBRARY_DEBUG:FILEPATH=GTEST_LIBRARY_DEBUG-NOTFOUND
-
-//Path to a library.
-GTEST_MAIN_LIBRARY:FILEPATH=GTEST_MAIN_LIBRARY-NOTFOUND
-
-//Path to a library.
-GTEST_MAIN_LIBRARY_DEBUG:FILEPATH=GTEST_MAIN_LIBRARY_DEBUG-NOTFOUND
-
-//Value Computed by CMake
-Graphfab_BINARY_DIR:STATIC=D:/sbnw/cmake-build-debug/testcases
-
-//Value Computed by CMake
-Graphfab_SOURCE_DIR:STATIC=D:/sbnw/testcases
 
 //Enable installation of googletest. (Projects embedding googletest
 // may want to turn this OFF.)
 INSTALL_GTEST:BOOL=ON
 
-//Single output directory for building all libraries.
-LIBRARY_OUTPUT_PATH:PATH=
-
-//libSBML root directory (contains lib, include, etc.)
-LIBSBML_DIR:FILEPATH=C:/Program Files (x86)/libSBML
-
-//Path to a file.
-LIBSBML_INCLUDE_DIR:PATH=C:/Program Files (x86)/libsbml/include
-
-//Path to a library.
-LIBSBML_LIBRARY:FILEPATH=C:/Program Files (x86)/libsbml/lib/libsbml.lib
-
 //libSBML root directory (contains lib, include, etc.)
 LIBSBML_PREFIX:PATH=C:/Program Files (x86)/libsbml
-
-//Path to a library.
-LIBSBML_STATIC_LIBRARY:FILEPATH=C:/Program Files (x86)/libsbml/lib/libsbml-static.lib
-
-//Root directory of libxml2 deployment
-LIBXML2_DIR:FILEPATH=None
 
 //Root directory of libxml2 deployment
 LIBXML2_PREFIX:PATH=C:/Program Files (x86)/libxml2
@@ -341,29 +289,8 @@ LINK_WITH_LIBSBML:BOOL=1
 //Link with Image Magick?
 LINK_WITH_MAGICK:BOOL=OFF
 
-//Path to a library.
-PYTHON_DEBUG_LIBRARY:FILEPATH=PYTHON_DEBUG_LIBRARY-NOTFOUND
-
 //Path to a program.
 PYTHON_EXECUTABLE:FILEPATH=C:/Miniconda3/python.exe
-
-//Path to a file.
-PYTHON_INCLUDE_DIR:PATH=C:/Miniconda3/include
-
-//Path to a library.
-PYTHON_LIBRARY:FILEPATH=C:/Miniconda3/libs/python37.lib
-
-//Path to a library.
-PYTHON_LIBRARY_DEBUG:FILEPATH=PYTHON_LIBRARY_DEBUG-NOTFOUND
-
-//Path to a library.
-PYTHON_LIBRARY_RELEASE:FILEPATH=PYTHON_LIBRARY_RELEASE-NOTFOUND
-
-//Value Computed by CMake
-Project_BINARY_DIR:STATIC=D:/sbnw/cmake-build-debug
-
-//Value Computed by CMake
-Project_SOURCE_DIR:STATIC=D:/sbnw
 
 //Value Computed by CMake
 SBNW_BINARY_DIR:STATIC=D:/sbnw/cmake-build-debug
@@ -379,25 +306,6 @@ SBNW_SOURCE_DIR:STATIC=D:/sbnw
 
 //Install Spyder plugin files
 SBNW_SPYDER_DIST:BOOL=OFF
-
-//When true, libraries that graphfab depends on (libSBML and its
-// dependencies) will be copied to the graphfab installation directory
-SBNW_WIN_COPY_DEPS_TO_INSTALL:BOOL=ON
-
-//Value Computed by CMake
-SagittariusSandbox_BINARY_DIR:STATIC=D:/sbnw/cmake-build-debug/sandbox/tikz
-
-//Value Computed by CMake
-SagittariusSandbox_SOURCE_DIR:STATIC=D:/sbnw/sandbox/tikz
-
-//Value Computed by CMake
-SagittariusSrc_BINARY_DIR:STATIC=D:/sbnw/cmake-build-debug/sbnw
-
-//Value Computed by CMake
-SagittariusSrc_SOURCE_DIR:STATIC=D:/sbnw/sbnw
-
-//Use gtest framework
-WITH_GTEST:BOOL=OFF
 
 //Value Computed by CMake
 gmock_BINARY_DIR:STATIC=D:/sbnw/cmake-build-debug/lib/googletest/googlemock
@@ -438,9 +346,6 @@ gtest_hide_internal_symbols:BOOL=OFF
 
 //Dependencies for the target
 gtest_main_LIB_DEPENDS:STATIC=general;gtest;
-
-//Dependencies for the target
-sbnw_pythonmod_LIB_DEPENDS:STATIC=general;sbnw_static;general;PYTHON_LIBRARY-NOTFOUND;
 
 
 ########################
@@ -617,32 +522,10 @@ CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Details about finding PythonInterp
 FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[C:/Miniconda3/python.exe][v3.7.4()]
-//Details about finding PythonLibs
-FIND_PACKAGE_MESSAGE_DETAILS_PythonLibs:INTERNAL=[C:/Miniconda3/libs/python37.lib][C:/Miniconda3/include][v3.7.4()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
-//ADVANCED property for variable: GTEST_INCLUDE_DIR
-GTEST_INCLUDE_DIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: GTEST_LIBRARY
-GTEST_LIBRARY-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: GTEST_LIBRARY_DEBUG
-GTEST_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: GTEST_MAIN_LIBRARY
-GTEST_MAIN_LIBRARY-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: GTEST_MAIN_LIBRARY_DEBUG
-GTEST_MAIN_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: PYTHON_DEBUG_LIBRARY
-PYTHON_DEBUG_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PYTHON_EXECUTABLE
 PYTHON_EXECUTABLE-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: PYTHON_INCLUDE_DIR
-PYTHON_INCLUDE_DIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: PYTHON_LIBRARY
-PYTHON_LIBRARY-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: PYTHON_LIBRARY_DEBUG
-PYTHON_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: PYTHON_LIBRARY_RELEASE
-PYTHON_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
 //CMAKE_INSTALL_PREFIX during last run
 _GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=C:/Program Files (x86)/SBNW
 generated_dir:INTERNAL=D:/sbnw/cmake-build-debug/lib/googletest/googletest/generated

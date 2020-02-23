@@ -35,7 +35,7 @@
 #include "network.h"
 #include "canvas.h"
 #include "box.h"
-#include "point.h"
+#include "sbnw/point.h"
 #include "sbnw/math/round.h"
 #include "sbnw/math/geom.h"
 #include "sbnw/math/transform.h"

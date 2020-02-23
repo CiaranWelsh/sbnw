@@ -62,7 +62,7 @@ lib\googletest\googlemock\CMakeFiles\gmock_main.dir\__\googletest\src\gtest-all.
 lib\googletest\googlemock\CMakeFiles\gmock_main.dir\__\googletest\src\gtest-all.cc.obj: ..\lib\googletest\googletest\src\gtest-all.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\sbnw\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object lib/googletest/googlemock/CMakeFiles/gmock_main.dir/__/googletest/src/gtest-all.cc.obj"
 	cd D:\sbnw\cmake-build-debug\lib\googletest\googlemock
-	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\cl.exe @<<
+	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx64\x64\cl.exe @<<
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\gmock_main.dir\__\googletest\src\gtest-all.cc.obj /Fd..\..\..\bin\gmock_maind.pdb /FS -c D:\sbnw\lib\googletest\googletest\src\gtest-all.cc
 <<
 	cd D:\sbnw\cmake-build-debug
@@ -70,7 +70,7 @@ lib\googletest\googlemock\CMakeFiles\gmock_main.dir\__\googletest\src\gtest-all.
 lib\googletest\googlemock\CMakeFiles\gmock_main.dir\__\googletest\src\gtest-all.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gmock_main.dir/__/googletest/src/gtest-all.cc.i"
 	cd D:\sbnw\cmake-build-debug\lib\googletest\googlemock
-	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\cl.exe > CMakeFiles\gmock_main.dir\__\googletest\src\gtest-all.cc.i @<<
+	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx64\x64\cl.exe > CMakeFiles\gmock_main.dir\__\googletest\src\gtest-all.cc.i @<<
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\sbnw\lib\googletest\googletest\src\gtest-all.cc
 <<
 	cd D:\sbnw\cmake-build-debug
@@ -78,7 +78,7 @@ lib\googletest\googlemock\CMakeFiles\gmock_main.dir\__\googletest\src\gtest-all.
 lib\googletest\googlemock\CMakeFiles\gmock_main.dir\__\googletest\src\gtest-all.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gmock_main.dir/__/googletest/src/gtest-all.cc.s"
 	cd D:\sbnw\cmake-build-debug\lib\googletest\googlemock
-	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\cl.exe @<<
+	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx64\x64\cl.exe @<<
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\gmock_main.dir\__\googletest\src\gtest-all.cc.s /c D:\sbnw\lib\googletest\googletest\src\gtest-all.cc
 <<
 	cd D:\sbnw\cmake-build-debug
@@ -87,7 +87,7 @@ lib\googletest\googlemock\CMakeFiles\gmock_main.dir\src\gmock-all.cc.obj: lib\go
 lib\googletest\googlemock\CMakeFiles\gmock_main.dir\src\gmock-all.cc.obj: ..\lib\googletest\googlemock\src\gmock-all.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\sbnw\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object lib/googletest/googlemock/CMakeFiles/gmock_main.dir/src/gmock-all.cc.obj"
 	cd D:\sbnw\cmake-build-debug\lib\googletest\googlemock
-	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\cl.exe @<<
+	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx64\x64\cl.exe @<<
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\gmock_main.dir\src\gmock-all.cc.obj /Fd..\..\..\bin\gmock_maind.pdb /FS -c D:\sbnw\lib\googletest\googlemock\src\gmock-all.cc
 <<
 	cd D:\sbnw\cmake-build-debug
@@ -95,7 +95,7 @@ lib\googletest\googlemock\CMakeFiles\gmock_main.dir\src\gmock-all.cc.obj: ..\lib
 lib\googletest\googlemock\CMakeFiles\gmock_main.dir\src\gmock-all.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gmock_main.dir/src/gmock-all.cc.i"
 	cd D:\sbnw\cmake-build-debug\lib\googletest\googlemock
-	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\cl.exe > CMakeFiles\gmock_main.dir\src\gmock-all.cc.i @<<
+	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx64\x64\cl.exe > CMakeFiles\gmock_main.dir\src\gmock-all.cc.i @<<
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\sbnw\lib\googletest\googlemock\src\gmock-all.cc
 <<
 	cd D:\sbnw\cmake-build-debug
@@ -103,7 +103,7 @@ lib\googletest\googlemock\CMakeFiles\gmock_main.dir\src\gmock-all.cc.i: cmake_fo
 lib\googletest\googlemock\CMakeFiles\gmock_main.dir\src\gmock-all.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gmock_main.dir/src/gmock-all.cc.s"
 	cd D:\sbnw\cmake-build-debug\lib\googletest\googlemock
-	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\cl.exe @<<
+	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx64\x64\cl.exe @<<
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\gmock_main.dir\src\gmock-all.cc.s /c D:\sbnw\lib\googletest\googlemock\src\gmock-all.cc
 <<
 	cd D:\sbnw\cmake-build-debug
@@ -112,7 +112,7 @@ lib\googletest\googlemock\CMakeFiles\gmock_main.dir\src\gmock_main.cc.obj: lib\g
 lib\googletest\googlemock\CMakeFiles\gmock_main.dir\src\gmock_main.cc.obj: ..\lib\googletest\googlemock\src\gmock_main.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\sbnw\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object lib/googletest/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj"
 	cd D:\sbnw\cmake-build-debug\lib\googletest\googlemock
-	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\cl.exe @<<
+	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx64\x64\cl.exe @<<
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\gmock_main.dir\src\gmock_main.cc.obj /Fd..\..\..\bin\gmock_maind.pdb /FS -c D:\sbnw\lib\googletest\googlemock\src\gmock_main.cc
 <<
 	cd D:\sbnw\cmake-build-debug
@@ -120,7 +120,7 @@ lib\googletest\googlemock\CMakeFiles\gmock_main.dir\src\gmock_main.cc.obj: ..\li
 lib\googletest\googlemock\CMakeFiles\gmock_main.dir\src\gmock_main.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gmock_main.dir/src/gmock_main.cc.i"
 	cd D:\sbnw\cmake-build-debug\lib\googletest\googlemock
-	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\cl.exe > CMakeFiles\gmock_main.dir\src\gmock_main.cc.i @<<
+	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx64\x64\cl.exe > CMakeFiles\gmock_main.dir\src\gmock_main.cc.i @<<
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\sbnw\lib\googletest\googlemock\src\gmock_main.cc
 <<
 	cd D:\sbnw\cmake-build-debug
@@ -128,7 +128,7 @@ lib\googletest\googlemock\CMakeFiles\gmock_main.dir\src\gmock_main.cc.i: cmake_f
 lib\googletest\googlemock\CMakeFiles\gmock_main.dir\src\gmock_main.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gmock_main.dir/src/gmock_main.cc.s"
 	cd D:\sbnw\cmake-build-debug\lib\googletest\googlemock
-	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\cl.exe @<<
+	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx64\x64\cl.exe @<<
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\gmock_main.dir\src\gmock_main.cc.s /c D:\sbnw\lib\googletest\googlemock\src\gmock_main.cc
 <<
 	cd D:\sbnw\cmake-build-debug
@@ -152,7 +152,7 @@ lib\gmock_maind.lib: lib\googletest\googlemock\CMakeFiles\gmock_main.dir\objects
 	$(CMAKE_COMMAND) -P CMakeFiles\gmock_main.dir\cmake_clean_target.cmake
 	cd D:\sbnw\cmake-build-debug
 	cd D:\sbnw\cmake-build-debug\lib\googletest\googlemock
-	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\link.exe /lib /nologo /machine:X86 /out:..\..\gmock_maind.lib @CMakeFiles\gmock_main.dir\objects1.rsp 
+	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx64\x64\link.exe /lib /nologo /machine:x64 /out:..\..\gmock_maind.lib @CMakeFiles\gmock_main.dir\objects1.rsp 
 	cd D:\sbnw\cmake-build-debug
 
 # Rule to build all files generated by this target.

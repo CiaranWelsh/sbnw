@@ -62,7 +62,7 @@ test\CMakeFiles\Test.dir\NetworkTests.cpp.obj: test\CMakeFiles\Test.dir\flags.ma
 test\CMakeFiles\Test.dir\NetworkTests.cpp.obj: ..\test\NetworkTests.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\sbnw\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object test/CMakeFiles/Test.dir/NetworkTests.cpp.obj"
 	cd D:\sbnw\cmake-build-debug\test
-	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\cl.exe @<<
+	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx64\x64\cl.exe @<<
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\Test.dir\NetworkTests.cpp.obj /FdCMakeFiles\Test.dir\ /FS -c D:\sbnw\test\NetworkTests.cpp
 <<
 	cd D:\sbnw\cmake-build-debug
@@ -70,7 +70,7 @@ test\CMakeFiles\Test.dir\NetworkTests.cpp.obj: ..\test\NetworkTests.cpp
 test\CMakeFiles\Test.dir\NetworkTests.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Test.dir/NetworkTests.cpp.i"
 	cd D:\sbnw\cmake-build-debug\test
-	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\cl.exe > CMakeFiles\Test.dir\NetworkTests.cpp.i @<<
+	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx64\x64\cl.exe > CMakeFiles\Test.dir\NetworkTests.cpp.i @<<
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\sbnw\test\NetworkTests.cpp
 <<
 	cd D:\sbnw\cmake-build-debug
@@ -78,7 +78,7 @@ test\CMakeFiles\Test.dir\NetworkTests.cpp.i: cmake_force
 test\CMakeFiles\Test.dir\NetworkTests.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Test.dir/NetworkTests.cpp.s"
 	cd D:\sbnw\cmake-build-debug\test
-	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\cl.exe @<<
+	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx64\x64\cl.exe @<<
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\Test.dir\NetworkTests.cpp.s /c D:\sbnw\test\NetworkTests.cpp
 <<
 	cd D:\sbnw\cmake-build-debug
@@ -100,8 +100,8 @@ test\Test.exe: "C:\Program Files (x86)\libsbml\lib\libsbml-static.lib"
 test\Test.exe: test\CMakeFiles\Test.dir\objects1.rsp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\sbnw\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Test.exe"
 	cd D:\sbnw\cmake-build-debug\test
-	C:\Users\cwelsh\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\193.6494.38\bin\cmake\win\bin\cmake.exe -E vs_link_exe --intdir=CMakeFiles\Test.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\mt.exe --manifests  -- C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\Test.dir\objects1.rsp @<<
- /out:Test.exe /implib:Test.lib /pdb:D:\sbnw\cmake-build-debug\test\Test.pdb /version:0.0  /machine:X86 /debug /INCREMENTAL /subsystem:console ..\lib\gtestd.lib ..\lib\gtest_maind.lib ..\sbnw\sbnw-static.lib ..\lib\gtestd.lib "C:\Program Files (x86)\libsbml\lib\libsbml-static.lib" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+	C:\Users\cwelsh\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\193.6494.38\bin\cmake\win\bin\cmake.exe -E vs_link_exe --intdir=CMakeFiles\Test.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x64\mt.exe --manifests  -- C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx64\x64\link.exe /nologo @CMakeFiles\Test.dir\objects1.rsp @<<
+ /out:Test.exe /implib:Test.lib /pdb:D:\sbnw\cmake-build-debug\test\Test.pdb /version:0.0  /machine:x64 /debug /INCREMENTAL /subsystem:console ..\lib\gtestd.lib ..\lib\gtest_maind.lib ..\sbnw\sbnw-static.lib ..\lib\gtestd.lib "C:\Program Files (x86)\libsbml\lib\libsbml-static.lib" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
 <<
 	cd D:\sbnw\cmake-build-debug
 

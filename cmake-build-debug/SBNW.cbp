@@ -275,6 +275,56 @@
 					<DistClean command="nmake /NOLOGO /f D:\sbnw\cmake-build-debug\lib\googletest\googletest\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="sbnw">
+				<Option output="D:/sbnw/cmake-build-debug/sbnw/sbnw.dll" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/sbnw/cmake-build-debug/sbnw"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/sbnw"/>
+					<Add directory="C:/Program Files (x86)/libsbml/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\sbnw\cmake-build-debug\sbnw\Makefile VERBOSE=1 sbnw"/>
+					<CompileFile command="nmake /NOLOGO /f D:\sbnw\cmake-build-debug\sbnw\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\sbnw\cmake-build-debug\sbnw\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\sbnw\cmake-build-debug\sbnw\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="sbnw/fast">
+				<Option output="D:/sbnw/cmake-build-debug/sbnw/sbnw.dll" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/sbnw/cmake-build-debug/sbnw"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/sbnw"/>
+					<Add directory="C:/Program Files (x86)/libsbml/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\sbnw\cmake-build-debug\sbnw\Makefile VERBOSE=1 sbnw/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\sbnw\cmake-build-debug\sbnw\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\sbnw\cmake-build-debug\sbnw\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\sbnw\cmake-build-debug\sbnw\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="sbnw-static">
 				<Option output="D:/sbnw/cmake-build-debug/sbnw/sbnw-static.lib" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="D:/sbnw/cmake-build-debug/sbnw"/>
@@ -327,7 +377,7 @@
 			</Target>
 			<Target title="Test">
 				<Option output="D:/sbnw/cmake-build-debug/test/Test.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir=""/>
+				<Option working_dir="D:/sbnw/cmake-build-debug/test"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="msvc8"/>
@@ -354,7 +404,7 @@
 			</Target>
 			<Target title="Test/fast">
 				<Option output="D:/sbnw/cmake-build-debug/test/Test.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir=""/>
+				<Option working_dir="D:/sbnw/cmake-build-debug/test"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="msvc8"/>
@@ -395,10 +445,120 @@
 		<Unit filename="D:/sbnw/lib/googletest/googletest/src/gtest_main.cc">
 			<Option target="gtest_main"/>
 		</Unit>
-		<Unit filename="D:/sbnw/sbnw/Network.cpp">
+		<Unit filename="D:/sbnw/sbnw/allen.h">
+			<Option target="sbnw"/>
 			<Option target="sbnw-static"/>
 		</Unit>
-		<Unit filename="D:/sbnw/sbnw/Network.h">
+		<Unit filename="D:/sbnw/sbnw/arrowhead.cpp">
+			<Option target="sbnw"/>
+			<Option target="sbnw-static"/>
+		</Unit>
+		<Unit filename="D:/sbnw/sbnw/arrowhead.h">
+			<Option target="sbnw"/>
+			<Option target="sbnw-static"/>
+		</Unit>
+		<Unit filename="D:/sbnw/sbnw/autolayoutSBML.cpp">
+			<Option target="sbnw"/>
+			<Option target="sbnw-static"/>
+		</Unit>
+		<Unit filename="D:/sbnw/sbnw/autolayoutSBML.h">
+			<Option target="sbnw"/>
+			<Option target="sbnw-static"/>
+		</Unit>
+		<Unit filename="D:/sbnw/sbnw/box.cpp">
+			<Option target="sbnw"/>
+			<Option target="sbnw-static"/>
+		</Unit>
+		<Unit filename="D:/sbnw/sbnw/box.h">
+			<Option target="sbnw"/>
+			<Option target="sbnw-static"/>
+		</Unit>
+		<Unit filename="D:/sbnw/sbnw/canvas.cpp">
+			<Option target="sbnw"/>
+			<Option target="sbnw-static"/>
+		</Unit>
+		<Unit filename="D:/sbnw/sbnw/canvas.h">
+			<Option target="sbnw"/>
+			<Option target="sbnw-static"/>
+		</Unit>
+		<Unit filename="D:/sbnw/sbnw/constants.h">
+			<Option target="sbnw"/>
+			<Option target="sbnw-static"/>
+		</Unit>
+		<Unit filename="D:/sbnw/sbnw/curve.h">
+			<Option target="sbnw"/>
+			<Option target="sbnw-static"/>
+		</Unit>
+		<Unit filename="D:/sbnw/sbnw/dist.h">
+			<Option target="sbnw"/>
+			<Option target="sbnw-static"/>
+		</Unit>
+		<Unit filename="D:/sbnw/sbnw/error.cpp">
+			<Option target="sbnw"/>
+			<Option target="sbnw-static"/>
+		</Unit>
+		<Unit filename="D:/sbnw/sbnw/error.h">
+			<Option target="sbnw"/>
+			<Option target="sbnw-static"/>
+		</Unit>
+		<Unit filename="D:/sbnw/sbnw/export.h">
+			<Option target="sbnw"/>
+			<Option target="sbnw-static"/>
+		</Unit>
+		<Unit filename="D:/sbnw/sbnw/geom.cpp">
+			<Option target="sbnw"/>
+			<Option target="sbnw-static"/>
+		</Unit>
+		<Unit filename="D:/sbnw/sbnw/geom.h">
+			<Option target="sbnw"/>
+			<Option target="sbnw-static"/>
+		</Unit>
+		<Unit filename="D:/sbnw/sbnw/io.cpp">
+			<Option target="sbnw"/>
+			<Option target="sbnw-static"/>
+		</Unit>
+		<Unit filename="D:/sbnw/sbnw/io.h">
+			<Option target="sbnw"/>
+			<Option target="sbnw-static"/>
+		</Unit>
+		<Unit filename="D:/sbnw/sbnw/layout.cpp">
+			<Option target="sbnw"/>
+			<Option target="sbnw-static"/>
+		</Unit>
+		<Unit filename="D:/sbnw/sbnw/layout.h">
+			<Option target="sbnw"/>
+			<Option target="sbnw-static"/>
+		</Unit>
+		<Unit filename="D:/sbnw/sbnw/network.cpp">
+			<Option target="sbnw"/>
+			<Option target="sbnw-static"/>
+		</Unit>
+		<Unit filename="D:/sbnw/sbnw/network.h">
+			<Option target="sbnw"/>
+			<Option target="sbnw-static"/>
+		</Unit>
+		<Unit filename="D:/sbnw/sbnw/point.cpp">
+			<Option target="sbnw"/>
+			<Option target="sbnw-static"/>
+		</Unit>
+		<Unit filename="D:/sbnw/sbnw/point.h">
+			<Option target="sbnw"/>
+			<Option target="sbnw-static"/>
+		</Unit>
+		<Unit filename="D:/sbnw/sbnw/rand_unif.h">
+			<Option target="sbnw"/>
+			<Option target="sbnw-static"/>
+		</Unit>
+		<Unit filename="D:/sbnw/sbnw/sign_mag.h">
+			<Option target="sbnw"/>
+			<Option target="sbnw-static"/>
+		</Unit>
+		<Unit filename="D:/sbnw/sbnw/transform.cpp">
+			<Option target="sbnw"/>
+			<Option target="sbnw-static"/>
+		</Unit>
+		<Unit filename="D:/sbnw/sbnw/transform.h">
+			<Option target="sbnw"/>
 			<Option target="sbnw-static"/>
 		</Unit>
 		<Unit filename="D:/sbnw/test/NetworkTests.cpp">

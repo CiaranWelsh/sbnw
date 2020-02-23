@@ -198,6 +198,19 @@ gtest_main\fast:
 .PHONY : gtest_main\fast
 
 #=============================================================================
+# Target rules for targets named sbnw
+
+# Build rule for target.
+sbnw: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) sbnw
+.PHONY : sbnw
+
+# fast build rule for target.
+sbnw\fast:
+	$(MAKE) -f sbnw\CMakeFiles\sbnw.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw.dir\build
+.PHONY : sbnw\fast
+
+#=============================================================================
 # Target rules for targets named sbnw-static
 
 # Build rule for target.
@@ -238,6 +251,7 @@ help:
 	@echo ... gmock
 	@echo ... gtest
 	@echo ... gtest_main
+	@echo ... sbnw
 	@echo ... sbnw-static
 	@echo ... Test
 .PHONY : help

@@ -156,6 +156,25 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+sbnw\CMakeFiles\sbnw.dir\rule:
+	cd D:\sbnw\cmake-build-debug
+	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw.dir\rule
+	cd D:\sbnw\cmake-build-debug\sbnw
+.PHONY : sbnw\CMakeFiles\sbnw.dir\rule
+
+# Convenience name for target.
+sbnw: sbnw\CMakeFiles\sbnw.dir\rule
+
+.PHONY : sbnw
+
+# fast build rule for target.
+sbnw\fast:
+	cd D:\sbnw\cmake-build-debug
+	$(MAKE) -f sbnw\CMakeFiles\sbnw.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw.dir\build
+	cd D:\sbnw\cmake-build-debug\sbnw
+.PHONY : sbnw\fast
+
+# Convenience name for target.
 sbnw\CMakeFiles\sbnw-static.dir\rule:
 	cd D:\sbnw\cmake-build-debug
 	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw-static.dir\rule
@@ -174,38 +193,401 @@ sbnw-static\fast:
 	cd D:\sbnw\cmake-build-debug\sbnw
 .PHONY : sbnw-static\fast
 
-Network.obj: Network.cpp.obj
+arrowhead.obj: arrowhead.cpp.obj
 
-.PHONY : Network.obj
+.PHONY : arrowhead.obj
 
 # target to build an object file
-Network.cpp.obj:
+arrowhead.cpp.obj:
 	cd D:\sbnw\cmake-build-debug
-	$(MAKE) -f sbnw\CMakeFiles\sbnw-static.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw-static.dir\Network.cpp.obj
+	$(MAKE) -f sbnw\CMakeFiles\sbnw.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw.dir\arrowhead.cpp.obj
+	$(MAKE) -f sbnw\CMakeFiles\sbnw-static.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw-static.dir\arrowhead.cpp.obj
 	cd D:\sbnw\cmake-build-debug\sbnw
-.PHONY : Network.cpp.obj
+.PHONY : arrowhead.cpp.obj
 
-Network.i: Network.cpp.i
+arrowhead.i: arrowhead.cpp.i
 
-.PHONY : Network.i
+.PHONY : arrowhead.i
 
 # target to preprocess a source file
-Network.cpp.i:
+arrowhead.cpp.i:
 	cd D:\sbnw\cmake-build-debug
-	$(MAKE) -f sbnw\CMakeFiles\sbnw-static.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw-static.dir\Network.cpp.i
+	$(MAKE) -f sbnw\CMakeFiles\sbnw.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw.dir\arrowhead.cpp.i
+	$(MAKE) -f sbnw\CMakeFiles\sbnw-static.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw-static.dir\arrowhead.cpp.i
 	cd D:\sbnw\cmake-build-debug\sbnw
-.PHONY : Network.cpp.i
+.PHONY : arrowhead.cpp.i
 
-Network.s: Network.cpp.s
+arrowhead.s: arrowhead.cpp.s
 
-.PHONY : Network.s
+.PHONY : arrowhead.s
 
 # target to generate assembly for a file
-Network.cpp.s:
+arrowhead.cpp.s:
 	cd D:\sbnw\cmake-build-debug
-	$(MAKE) -f sbnw\CMakeFiles\sbnw-static.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw-static.dir\Network.cpp.s
+	$(MAKE) -f sbnw\CMakeFiles\sbnw.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw.dir\arrowhead.cpp.s
+	$(MAKE) -f sbnw\CMakeFiles\sbnw-static.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw-static.dir\arrowhead.cpp.s
 	cd D:\sbnw\cmake-build-debug\sbnw
-.PHONY : Network.cpp.s
+.PHONY : arrowhead.cpp.s
+
+autolayoutSBML.obj: autolayoutSBML.cpp.obj
+
+.PHONY : autolayoutSBML.obj
+
+# target to build an object file
+autolayoutSBML.cpp.obj:
+	cd D:\sbnw\cmake-build-debug
+	$(MAKE) -f sbnw\CMakeFiles\sbnw.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw.dir\autolayoutSBML.cpp.obj
+	$(MAKE) -f sbnw\CMakeFiles\sbnw-static.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw-static.dir\autolayoutSBML.cpp.obj
+	cd D:\sbnw\cmake-build-debug\sbnw
+.PHONY : autolayoutSBML.cpp.obj
+
+autolayoutSBML.i: autolayoutSBML.cpp.i
+
+.PHONY : autolayoutSBML.i
+
+# target to preprocess a source file
+autolayoutSBML.cpp.i:
+	cd D:\sbnw\cmake-build-debug
+	$(MAKE) -f sbnw\CMakeFiles\sbnw.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw.dir\autolayoutSBML.cpp.i
+	$(MAKE) -f sbnw\CMakeFiles\sbnw-static.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw-static.dir\autolayoutSBML.cpp.i
+	cd D:\sbnw\cmake-build-debug\sbnw
+.PHONY : autolayoutSBML.cpp.i
+
+autolayoutSBML.s: autolayoutSBML.cpp.s
+
+.PHONY : autolayoutSBML.s
+
+# target to generate assembly for a file
+autolayoutSBML.cpp.s:
+	cd D:\sbnw\cmake-build-debug
+	$(MAKE) -f sbnw\CMakeFiles\sbnw.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw.dir\autolayoutSBML.cpp.s
+	$(MAKE) -f sbnw\CMakeFiles\sbnw-static.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw-static.dir\autolayoutSBML.cpp.s
+	cd D:\sbnw\cmake-build-debug\sbnw
+.PHONY : autolayoutSBML.cpp.s
+
+box.obj: box.cpp.obj
+
+.PHONY : box.obj
+
+# target to build an object file
+box.cpp.obj:
+	cd D:\sbnw\cmake-build-debug
+	$(MAKE) -f sbnw\CMakeFiles\sbnw.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw.dir\box.cpp.obj
+	$(MAKE) -f sbnw\CMakeFiles\sbnw-static.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw-static.dir\box.cpp.obj
+	cd D:\sbnw\cmake-build-debug\sbnw
+.PHONY : box.cpp.obj
+
+box.i: box.cpp.i
+
+.PHONY : box.i
+
+# target to preprocess a source file
+box.cpp.i:
+	cd D:\sbnw\cmake-build-debug
+	$(MAKE) -f sbnw\CMakeFiles\sbnw.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw.dir\box.cpp.i
+	$(MAKE) -f sbnw\CMakeFiles\sbnw-static.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw-static.dir\box.cpp.i
+	cd D:\sbnw\cmake-build-debug\sbnw
+.PHONY : box.cpp.i
+
+box.s: box.cpp.s
+
+.PHONY : box.s
+
+# target to generate assembly for a file
+box.cpp.s:
+	cd D:\sbnw\cmake-build-debug
+	$(MAKE) -f sbnw\CMakeFiles\sbnw.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw.dir\box.cpp.s
+	$(MAKE) -f sbnw\CMakeFiles\sbnw-static.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw-static.dir\box.cpp.s
+	cd D:\sbnw\cmake-build-debug\sbnw
+.PHONY : box.cpp.s
+
+canvas.obj: canvas.cpp.obj
+
+.PHONY : canvas.obj
+
+# target to build an object file
+canvas.cpp.obj:
+	cd D:\sbnw\cmake-build-debug
+	$(MAKE) -f sbnw\CMakeFiles\sbnw.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw.dir\canvas.cpp.obj
+	$(MAKE) -f sbnw\CMakeFiles\sbnw-static.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw-static.dir\canvas.cpp.obj
+	cd D:\sbnw\cmake-build-debug\sbnw
+.PHONY : canvas.cpp.obj
+
+canvas.i: canvas.cpp.i
+
+.PHONY : canvas.i
+
+# target to preprocess a source file
+canvas.cpp.i:
+	cd D:\sbnw\cmake-build-debug
+	$(MAKE) -f sbnw\CMakeFiles\sbnw.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw.dir\canvas.cpp.i
+	$(MAKE) -f sbnw\CMakeFiles\sbnw-static.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw-static.dir\canvas.cpp.i
+	cd D:\sbnw\cmake-build-debug\sbnw
+.PHONY : canvas.cpp.i
+
+canvas.s: canvas.cpp.s
+
+.PHONY : canvas.s
+
+# target to generate assembly for a file
+canvas.cpp.s:
+	cd D:\sbnw\cmake-build-debug
+	$(MAKE) -f sbnw\CMakeFiles\sbnw.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw.dir\canvas.cpp.s
+	$(MAKE) -f sbnw\CMakeFiles\sbnw-static.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw-static.dir\canvas.cpp.s
+	cd D:\sbnw\cmake-build-debug\sbnw
+.PHONY : canvas.cpp.s
+
+error.obj: error.cpp.obj
+
+.PHONY : error.obj
+
+# target to build an object file
+error.cpp.obj:
+	cd D:\sbnw\cmake-build-debug
+	$(MAKE) -f sbnw\CMakeFiles\sbnw.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw.dir\error.cpp.obj
+	$(MAKE) -f sbnw\CMakeFiles\sbnw-static.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw-static.dir\error.cpp.obj
+	cd D:\sbnw\cmake-build-debug\sbnw
+.PHONY : error.cpp.obj
+
+error.i: error.cpp.i
+
+.PHONY : error.i
+
+# target to preprocess a source file
+error.cpp.i:
+	cd D:\sbnw\cmake-build-debug
+	$(MAKE) -f sbnw\CMakeFiles\sbnw.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw.dir\error.cpp.i
+	$(MAKE) -f sbnw\CMakeFiles\sbnw-static.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw-static.dir\error.cpp.i
+	cd D:\sbnw\cmake-build-debug\sbnw
+.PHONY : error.cpp.i
+
+error.s: error.cpp.s
+
+.PHONY : error.s
+
+# target to generate assembly for a file
+error.cpp.s:
+	cd D:\sbnw\cmake-build-debug
+	$(MAKE) -f sbnw\CMakeFiles\sbnw.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw.dir\error.cpp.s
+	$(MAKE) -f sbnw\CMakeFiles\sbnw-static.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw-static.dir\error.cpp.s
+	cd D:\sbnw\cmake-build-debug\sbnw
+.PHONY : error.cpp.s
+
+geom.obj: geom.cpp.obj
+
+.PHONY : geom.obj
+
+# target to build an object file
+geom.cpp.obj:
+	cd D:\sbnw\cmake-build-debug
+	$(MAKE) -f sbnw\CMakeFiles\sbnw.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw.dir\geom.cpp.obj
+	$(MAKE) -f sbnw\CMakeFiles\sbnw-static.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw-static.dir\geom.cpp.obj
+	cd D:\sbnw\cmake-build-debug\sbnw
+.PHONY : geom.cpp.obj
+
+geom.i: geom.cpp.i
+
+.PHONY : geom.i
+
+# target to preprocess a source file
+geom.cpp.i:
+	cd D:\sbnw\cmake-build-debug
+	$(MAKE) -f sbnw\CMakeFiles\sbnw.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw.dir\geom.cpp.i
+	$(MAKE) -f sbnw\CMakeFiles\sbnw-static.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw-static.dir\geom.cpp.i
+	cd D:\sbnw\cmake-build-debug\sbnw
+.PHONY : geom.cpp.i
+
+geom.s: geom.cpp.s
+
+.PHONY : geom.s
+
+# target to generate assembly for a file
+geom.cpp.s:
+	cd D:\sbnw\cmake-build-debug
+	$(MAKE) -f sbnw\CMakeFiles\sbnw.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw.dir\geom.cpp.s
+	$(MAKE) -f sbnw\CMakeFiles\sbnw-static.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw-static.dir\geom.cpp.s
+	cd D:\sbnw\cmake-build-debug\sbnw
+.PHONY : geom.cpp.s
+
+io.obj: io.cpp.obj
+
+.PHONY : io.obj
+
+# target to build an object file
+io.cpp.obj:
+	cd D:\sbnw\cmake-build-debug
+	$(MAKE) -f sbnw\CMakeFiles\sbnw.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw.dir\io.cpp.obj
+	$(MAKE) -f sbnw\CMakeFiles\sbnw-static.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw-static.dir\io.cpp.obj
+	cd D:\sbnw\cmake-build-debug\sbnw
+.PHONY : io.cpp.obj
+
+io.i: io.cpp.i
+
+.PHONY : io.i
+
+# target to preprocess a source file
+io.cpp.i:
+	cd D:\sbnw\cmake-build-debug
+	$(MAKE) -f sbnw\CMakeFiles\sbnw.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw.dir\io.cpp.i
+	$(MAKE) -f sbnw\CMakeFiles\sbnw-static.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw-static.dir\io.cpp.i
+	cd D:\sbnw\cmake-build-debug\sbnw
+.PHONY : io.cpp.i
+
+io.s: io.cpp.s
+
+.PHONY : io.s
+
+# target to generate assembly for a file
+io.cpp.s:
+	cd D:\sbnw\cmake-build-debug
+	$(MAKE) -f sbnw\CMakeFiles\sbnw.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw.dir\io.cpp.s
+	$(MAKE) -f sbnw\CMakeFiles\sbnw-static.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw-static.dir\io.cpp.s
+	cd D:\sbnw\cmake-build-debug\sbnw
+.PHONY : io.cpp.s
+
+layout.obj: layout.cpp.obj
+
+.PHONY : layout.obj
+
+# target to build an object file
+layout.cpp.obj:
+	cd D:\sbnw\cmake-build-debug
+	$(MAKE) -f sbnw\CMakeFiles\sbnw.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw.dir\layout.cpp.obj
+	$(MAKE) -f sbnw\CMakeFiles\sbnw-static.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw-static.dir\layout.cpp.obj
+	cd D:\sbnw\cmake-build-debug\sbnw
+.PHONY : layout.cpp.obj
+
+layout.i: layout.cpp.i
+
+.PHONY : layout.i
+
+# target to preprocess a source file
+layout.cpp.i:
+	cd D:\sbnw\cmake-build-debug
+	$(MAKE) -f sbnw\CMakeFiles\sbnw.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw.dir\layout.cpp.i
+	$(MAKE) -f sbnw\CMakeFiles\sbnw-static.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw-static.dir\layout.cpp.i
+	cd D:\sbnw\cmake-build-debug\sbnw
+.PHONY : layout.cpp.i
+
+layout.s: layout.cpp.s
+
+.PHONY : layout.s
+
+# target to generate assembly for a file
+layout.cpp.s:
+	cd D:\sbnw\cmake-build-debug
+	$(MAKE) -f sbnw\CMakeFiles\sbnw.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw.dir\layout.cpp.s
+	$(MAKE) -f sbnw\CMakeFiles\sbnw-static.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw-static.dir\layout.cpp.s
+	cd D:\sbnw\cmake-build-debug\sbnw
+.PHONY : layout.cpp.s
+
+network.obj: network.cpp.obj
+
+.PHONY : network.obj
+
+# target to build an object file
+network.cpp.obj:
+	cd D:\sbnw\cmake-build-debug
+	$(MAKE) -f sbnw\CMakeFiles\sbnw.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw.dir\network.cpp.obj
+	$(MAKE) -f sbnw\CMakeFiles\sbnw-static.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw-static.dir\network.cpp.obj
+	cd D:\sbnw\cmake-build-debug\sbnw
+.PHONY : network.cpp.obj
+
+network.i: network.cpp.i
+
+.PHONY : network.i
+
+# target to preprocess a source file
+network.cpp.i:
+	cd D:\sbnw\cmake-build-debug
+	$(MAKE) -f sbnw\CMakeFiles\sbnw.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw.dir\network.cpp.i
+	$(MAKE) -f sbnw\CMakeFiles\sbnw-static.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw-static.dir\network.cpp.i
+	cd D:\sbnw\cmake-build-debug\sbnw
+.PHONY : network.cpp.i
+
+network.s: network.cpp.s
+
+.PHONY : network.s
+
+# target to generate assembly for a file
+network.cpp.s:
+	cd D:\sbnw\cmake-build-debug
+	$(MAKE) -f sbnw\CMakeFiles\sbnw.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw.dir\network.cpp.s
+	$(MAKE) -f sbnw\CMakeFiles\sbnw-static.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw-static.dir\network.cpp.s
+	cd D:\sbnw\cmake-build-debug\sbnw
+.PHONY : network.cpp.s
+
+point.obj: point.cpp.obj
+
+.PHONY : point.obj
+
+# target to build an object file
+point.cpp.obj:
+	cd D:\sbnw\cmake-build-debug
+	$(MAKE) -f sbnw\CMakeFiles\sbnw.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw.dir\point.cpp.obj
+	$(MAKE) -f sbnw\CMakeFiles\sbnw-static.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw-static.dir\point.cpp.obj
+	cd D:\sbnw\cmake-build-debug\sbnw
+.PHONY : point.cpp.obj
+
+point.i: point.cpp.i
+
+.PHONY : point.i
+
+# target to preprocess a source file
+point.cpp.i:
+	cd D:\sbnw\cmake-build-debug
+	$(MAKE) -f sbnw\CMakeFiles\sbnw.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw.dir\point.cpp.i
+	$(MAKE) -f sbnw\CMakeFiles\sbnw-static.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw-static.dir\point.cpp.i
+	cd D:\sbnw\cmake-build-debug\sbnw
+.PHONY : point.cpp.i
+
+point.s: point.cpp.s
+
+.PHONY : point.s
+
+# target to generate assembly for a file
+point.cpp.s:
+	cd D:\sbnw\cmake-build-debug
+	$(MAKE) -f sbnw\CMakeFiles\sbnw.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw.dir\point.cpp.s
+	$(MAKE) -f sbnw\CMakeFiles\sbnw-static.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw-static.dir\point.cpp.s
+	cd D:\sbnw\cmake-build-debug\sbnw
+.PHONY : point.cpp.s
+
+transform.obj: transform.cpp.obj
+
+.PHONY : transform.obj
+
+# target to build an object file
+transform.cpp.obj:
+	cd D:\sbnw\cmake-build-debug
+	$(MAKE) -f sbnw\CMakeFiles\sbnw.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw.dir\transform.cpp.obj
+	$(MAKE) -f sbnw\CMakeFiles\sbnw-static.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw-static.dir\transform.cpp.obj
+	cd D:\sbnw\cmake-build-debug\sbnw
+.PHONY : transform.cpp.obj
+
+transform.i: transform.cpp.i
+
+.PHONY : transform.i
+
+# target to preprocess a source file
+transform.cpp.i:
+	cd D:\sbnw\cmake-build-debug
+	$(MAKE) -f sbnw\CMakeFiles\sbnw.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw.dir\transform.cpp.i
+	$(MAKE) -f sbnw\CMakeFiles\sbnw-static.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw-static.dir\transform.cpp.i
+	cd D:\sbnw\cmake-build-debug\sbnw
+.PHONY : transform.cpp.i
+
+transform.s: transform.cpp.s
+
+.PHONY : transform.s
+
+# target to generate assembly for a file
+transform.cpp.s:
+	cd D:\sbnw\cmake-build-debug
+	$(MAKE) -f sbnw\CMakeFiles\sbnw.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw.dir\transform.cpp.s
+	$(MAKE) -f sbnw\CMakeFiles\sbnw-static.dir\build.make /nologo -$(MAKEFLAGS) sbnw\CMakeFiles\sbnw-static.dir\transform.cpp.s
+	cd D:\sbnw\cmake-build-debug\sbnw
+.PHONY : transform.cpp.s
 
 # Help Target
 help:
@@ -213,15 +595,46 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
+	@echo ... sbnw
 	@echo ... sbnw-static
 	@echo ... install/local
 	@echo ... install
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... list_install_components
-	@echo ... Network.obj
-	@echo ... Network.i
-	@echo ... Network.s
+	@echo ... arrowhead.obj
+	@echo ... arrowhead.i
+	@echo ... arrowhead.s
+	@echo ... autolayoutSBML.obj
+	@echo ... autolayoutSBML.i
+	@echo ... autolayoutSBML.s
+	@echo ... box.obj
+	@echo ... box.i
+	@echo ... box.s
+	@echo ... canvas.obj
+	@echo ... canvas.i
+	@echo ... canvas.s
+	@echo ... error.obj
+	@echo ... error.i
+	@echo ... error.s
+	@echo ... geom.obj
+	@echo ... geom.i
+	@echo ... geom.s
+	@echo ... io.obj
+	@echo ... io.i
+	@echo ... io.s
+	@echo ... layout.obj
+	@echo ... layout.i
+	@echo ... layout.s
+	@echo ... network.obj
+	@echo ... network.i
+	@echo ... network.s
+	@echo ... point.obj
+	@echo ... point.i
+	@echo ... point.s
+	@echo ... transform.obj
+	@echo ... transform.i
+	@echo ... transform.s
 .PHONY : help
 
 

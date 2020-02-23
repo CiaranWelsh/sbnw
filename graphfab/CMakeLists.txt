@@ -12,7 +12,7 @@ set(SOURCES
         box.cpp
         canvas.cpp
         fr.cpp
-        point.cpp
+        ../sbnw/point.cpp
         math/cubic.cpp
         math/geom.cpp
         math/transform.cpp
@@ -44,7 +44,7 @@ set(HEADERS
         curve.h
         fr.h
         layoutall.h
-        point.h
+        ../sbnw/point.h
         math/allen.h
         math/dist.h
         math/geom.h

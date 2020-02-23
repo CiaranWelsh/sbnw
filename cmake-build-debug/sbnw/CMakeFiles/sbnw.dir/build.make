@@ -58,46 +58,316 @@ include sbnw\CMakeFiles\sbnw.dir\progress.make
 # Include the compile flags for this target's objects.
 include sbnw\CMakeFiles\sbnw.dir\flags.make
 
-sbnw\CMakeFiles\sbnw.dir\NotARealClass.cpp.obj: sbnw\CMakeFiles\sbnw.dir\flags.make
-sbnw\CMakeFiles\sbnw.dir\NotARealClass.cpp.obj: ..\sbnw\NotARealClass.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\sbnw\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object sbnw/CMakeFiles/sbnw.dir/NotARealClass.cpp.obj"
+sbnw\CMakeFiles\sbnw.dir\network.cpp.obj: sbnw\CMakeFiles\sbnw.dir\flags.make
+sbnw\CMakeFiles\sbnw.dir\network.cpp.obj: ..\sbnw\network.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\sbnw\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object sbnw/CMakeFiles/sbnw.dir/network.cpp.obj"
 	cd D:\sbnw\cmake-build-debug\sbnw
-	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\sbnw.dir\NotARealClass.cpp.obj /FdCMakeFiles\sbnw.dir\ /FS -c D:\sbnw\sbnw\NotARealClass.cpp
+	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx64\x64\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\sbnw.dir\network.cpp.obj /FdCMakeFiles\sbnw.dir\ /FS -c D:\sbnw\sbnw\network.cpp
 <<
 	cd D:\sbnw\cmake-build-debug
 
-sbnw\CMakeFiles\sbnw.dir\NotARealClass.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sbnw.dir/NotARealClass.cpp.i"
+sbnw\CMakeFiles\sbnw.dir\network.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sbnw.dir/network.cpp.i"
 	cd D:\sbnw\cmake-build-debug\sbnw
-	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\cl.exe > CMakeFiles\sbnw.dir\NotARealClass.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\sbnw\sbnw\NotARealClass.cpp
+	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx64\x64\cl.exe > CMakeFiles\sbnw.dir\network.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\sbnw\sbnw\network.cpp
 <<
 	cd D:\sbnw\cmake-build-debug
 
-sbnw\CMakeFiles\sbnw.dir\NotARealClass.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sbnw.dir/NotARealClass.cpp.s"
+sbnw\CMakeFiles\sbnw.dir\network.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sbnw.dir/network.cpp.s"
 	cd D:\sbnw\cmake-build-debug\sbnw
-	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\sbnw.dir\NotARealClass.cpp.s /c D:\sbnw\sbnw\NotARealClass.cpp
+	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx64\x64\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\sbnw.dir\network.cpp.s /c D:\sbnw\sbnw\network.cpp
+<<
+	cd D:\sbnw\cmake-build-debug
+
+sbnw\CMakeFiles\sbnw.dir\arrowhead.cpp.obj: sbnw\CMakeFiles\sbnw.dir\flags.make
+sbnw\CMakeFiles\sbnw.dir\arrowhead.cpp.obj: ..\sbnw\arrowhead.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\sbnw\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object sbnw/CMakeFiles/sbnw.dir/arrowhead.cpp.obj"
+	cd D:\sbnw\cmake-build-debug\sbnw
+	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx64\x64\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\sbnw.dir\arrowhead.cpp.obj /FdCMakeFiles\sbnw.dir\ /FS -c D:\sbnw\sbnw\arrowhead.cpp
+<<
+	cd D:\sbnw\cmake-build-debug
+
+sbnw\CMakeFiles\sbnw.dir\arrowhead.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sbnw.dir/arrowhead.cpp.i"
+	cd D:\sbnw\cmake-build-debug\sbnw
+	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx64\x64\cl.exe > CMakeFiles\sbnw.dir\arrowhead.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\sbnw\sbnw\arrowhead.cpp
+<<
+	cd D:\sbnw\cmake-build-debug
+
+sbnw\CMakeFiles\sbnw.dir\arrowhead.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sbnw.dir/arrowhead.cpp.s"
+	cd D:\sbnw\cmake-build-debug\sbnw
+	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx64\x64\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\sbnw.dir\arrowhead.cpp.s /c D:\sbnw\sbnw\arrowhead.cpp
+<<
+	cd D:\sbnw\cmake-build-debug
+
+sbnw\CMakeFiles\sbnw.dir\point.cpp.obj: sbnw\CMakeFiles\sbnw.dir\flags.make
+sbnw\CMakeFiles\sbnw.dir\point.cpp.obj: ..\sbnw\point.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\sbnw\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object sbnw/CMakeFiles/sbnw.dir/point.cpp.obj"
+	cd D:\sbnw\cmake-build-debug\sbnw
+	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx64\x64\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\sbnw.dir\point.cpp.obj /FdCMakeFiles\sbnw.dir\ /FS -c D:\sbnw\sbnw\point.cpp
+<<
+	cd D:\sbnw\cmake-build-debug
+
+sbnw\CMakeFiles\sbnw.dir\point.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sbnw.dir/point.cpp.i"
+	cd D:\sbnw\cmake-build-debug\sbnw
+	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx64\x64\cl.exe > CMakeFiles\sbnw.dir\point.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\sbnw\sbnw\point.cpp
+<<
+	cd D:\sbnw\cmake-build-debug
+
+sbnw\CMakeFiles\sbnw.dir\point.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sbnw.dir/point.cpp.s"
+	cd D:\sbnw\cmake-build-debug\sbnw
+	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx64\x64\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\sbnw.dir\point.cpp.s /c D:\sbnw\sbnw\point.cpp
+<<
+	cd D:\sbnw\cmake-build-debug
+
+sbnw\CMakeFiles\sbnw.dir\transform.cpp.obj: sbnw\CMakeFiles\sbnw.dir\flags.make
+sbnw\CMakeFiles\sbnw.dir\transform.cpp.obj: ..\sbnw\transform.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\sbnw\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object sbnw/CMakeFiles/sbnw.dir/transform.cpp.obj"
+	cd D:\sbnw\cmake-build-debug\sbnw
+	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx64\x64\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\sbnw.dir\transform.cpp.obj /FdCMakeFiles\sbnw.dir\ /FS -c D:\sbnw\sbnw\transform.cpp
+<<
+	cd D:\sbnw\cmake-build-debug
+
+sbnw\CMakeFiles\sbnw.dir\transform.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sbnw.dir/transform.cpp.i"
+	cd D:\sbnw\cmake-build-debug\sbnw
+	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx64\x64\cl.exe > CMakeFiles\sbnw.dir\transform.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\sbnw\sbnw\transform.cpp
+<<
+	cd D:\sbnw\cmake-build-debug
+
+sbnw\CMakeFiles\sbnw.dir\transform.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sbnw.dir/transform.cpp.s"
+	cd D:\sbnw\cmake-build-debug\sbnw
+	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx64\x64\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\sbnw.dir\transform.cpp.s /c D:\sbnw\sbnw\transform.cpp
+<<
+	cd D:\sbnw\cmake-build-debug
+
+sbnw\CMakeFiles\sbnw.dir\box.cpp.obj: sbnw\CMakeFiles\sbnw.dir\flags.make
+sbnw\CMakeFiles\sbnw.dir\box.cpp.obj: ..\sbnw\box.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\sbnw\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object sbnw/CMakeFiles/sbnw.dir/box.cpp.obj"
+	cd D:\sbnw\cmake-build-debug\sbnw
+	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx64\x64\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\sbnw.dir\box.cpp.obj /FdCMakeFiles\sbnw.dir\ /FS -c D:\sbnw\sbnw\box.cpp
+<<
+	cd D:\sbnw\cmake-build-debug
+
+sbnw\CMakeFiles\sbnw.dir\box.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sbnw.dir/box.cpp.i"
+	cd D:\sbnw\cmake-build-debug\sbnw
+	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx64\x64\cl.exe > CMakeFiles\sbnw.dir\box.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\sbnw\sbnw\box.cpp
+<<
+	cd D:\sbnw\cmake-build-debug
+
+sbnw\CMakeFiles\sbnw.dir\box.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sbnw.dir/box.cpp.s"
+	cd D:\sbnw\cmake-build-debug\sbnw
+	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx64\x64\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\sbnw.dir\box.cpp.s /c D:\sbnw\sbnw\box.cpp
+<<
+	cd D:\sbnw\cmake-build-debug
+
+sbnw\CMakeFiles\sbnw.dir\autolayoutSBML.cpp.obj: sbnw\CMakeFiles\sbnw.dir\flags.make
+sbnw\CMakeFiles\sbnw.dir\autolayoutSBML.cpp.obj: ..\sbnw\autolayoutSBML.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\sbnw\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object sbnw/CMakeFiles/sbnw.dir/autolayoutSBML.cpp.obj"
+	cd D:\sbnw\cmake-build-debug\sbnw
+	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx64\x64\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\sbnw.dir\autolayoutSBML.cpp.obj /FdCMakeFiles\sbnw.dir\ /FS -c D:\sbnw\sbnw\autolayoutSBML.cpp
+<<
+	cd D:\sbnw\cmake-build-debug
+
+sbnw\CMakeFiles\sbnw.dir\autolayoutSBML.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sbnw.dir/autolayoutSBML.cpp.i"
+	cd D:\sbnw\cmake-build-debug\sbnw
+	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx64\x64\cl.exe > CMakeFiles\sbnw.dir\autolayoutSBML.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\sbnw\sbnw\autolayoutSBML.cpp
+<<
+	cd D:\sbnw\cmake-build-debug
+
+sbnw\CMakeFiles\sbnw.dir\autolayoutSBML.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sbnw.dir/autolayoutSBML.cpp.s"
+	cd D:\sbnw\cmake-build-debug\sbnw
+	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx64\x64\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\sbnw.dir\autolayoutSBML.cpp.s /c D:\sbnw\sbnw\autolayoutSBML.cpp
+<<
+	cd D:\sbnw\cmake-build-debug
+
+sbnw\CMakeFiles\sbnw.dir\error.cpp.obj: sbnw\CMakeFiles\sbnw.dir\flags.make
+sbnw\CMakeFiles\sbnw.dir\error.cpp.obj: ..\sbnw\error.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\sbnw\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object sbnw/CMakeFiles/sbnw.dir/error.cpp.obj"
+	cd D:\sbnw\cmake-build-debug\sbnw
+	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx64\x64\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\sbnw.dir\error.cpp.obj /FdCMakeFiles\sbnw.dir\ /FS -c D:\sbnw\sbnw\error.cpp
+<<
+	cd D:\sbnw\cmake-build-debug
+
+sbnw\CMakeFiles\sbnw.dir\error.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sbnw.dir/error.cpp.i"
+	cd D:\sbnw\cmake-build-debug\sbnw
+	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx64\x64\cl.exe > CMakeFiles\sbnw.dir\error.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\sbnw\sbnw\error.cpp
+<<
+	cd D:\sbnw\cmake-build-debug
+
+sbnw\CMakeFiles\sbnw.dir\error.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sbnw.dir/error.cpp.s"
+	cd D:\sbnw\cmake-build-debug\sbnw
+	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx64\x64\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\sbnw.dir\error.cpp.s /c D:\sbnw\sbnw\error.cpp
+<<
+	cd D:\sbnw\cmake-build-debug
+
+sbnw\CMakeFiles\sbnw.dir\layout.cpp.obj: sbnw\CMakeFiles\sbnw.dir\flags.make
+sbnw\CMakeFiles\sbnw.dir\layout.cpp.obj: ..\sbnw\layout.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\sbnw\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object sbnw/CMakeFiles/sbnw.dir/layout.cpp.obj"
+	cd D:\sbnw\cmake-build-debug\sbnw
+	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx64\x64\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\sbnw.dir\layout.cpp.obj /FdCMakeFiles\sbnw.dir\ /FS -c D:\sbnw\sbnw\layout.cpp
+<<
+	cd D:\sbnw\cmake-build-debug
+
+sbnw\CMakeFiles\sbnw.dir\layout.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sbnw.dir/layout.cpp.i"
+	cd D:\sbnw\cmake-build-debug\sbnw
+	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx64\x64\cl.exe > CMakeFiles\sbnw.dir\layout.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\sbnw\sbnw\layout.cpp
+<<
+	cd D:\sbnw\cmake-build-debug
+
+sbnw\CMakeFiles\sbnw.dir\layout.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sbnw.dir/layout.cpp.s"
+	cd D:\sbnw\cmake-build-debug\sbnw
+	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx64\x64\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\sbnw.dir\layout.cpp.s /c D:\sbnw\sbnw\layout.cpp
+<<
+	cd D:\sbnw\cmake-build-debug
+
+sbnw\CMakeFiles\sbnw.dir\geom.cpp.obj: sbnw\CMakeFiles\sbnw.dir\flags.make
+sbnw\CMakeFiles\sbnw.dir\geom.cpp.obj: ..\sbnw\geom.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\sbnw\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object sbnw/CMakeFiles/sbnw.dir/geom.cpp.obj"
+	cd D:\sbnw\cmake-build-debug\sbnw
+	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx64\x64\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\sbnw.dir\geom.cpp.obj /FdCMakeFiles\sbnw.dir\ /FS -c D:\sbnw\sbnw\geom.cpp
+<<
+	cd D:\sbnw\cmake-build-debug
+
+sbnw\CMakeFiles\sbnw.dir\geom.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sbnw.dir/geom.cpp.i"
+	cd D:\sbnw\cmake-build-debug\sbnw
+	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx64\x64\cl.exe > CMakeFiles\sbnw.dir\geom.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\sbnw\sbnw\geom.cpp
+<<
+	cd D:\sbnw\cmake-build-debug
+
+sbnw\CMakeFiles\sbnw.dir\geom.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sbnw.dir/geom.cpp.s"
+	cd D:\sbnw\cmake-build-debug\sbnw
+	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx64\x64\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\sbnw.dir\geom.cpp.s /c D:\sbnw\sbnw\geom.cpp
+<<
+	cd D:\sbnw\cmake-build-debug
+
+sbnw\CMakeFiles\sbnw.dir\canvas.cpp.obj: sbnw\CMakeFiles\sbnw.dir\flags.make
+sbnw\CMakeFiles\sbnw.dir\canvas.cpp.obj: ..\sbnw\canvas.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\sbnw\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object sbnw/CMakeFiles/sbnw.dir/canvas.cpp.obj"
+	cd D:\sbnw\cmake-build-debug\sbnw
+	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx64\x64\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\sbnw.dir\canvas.cpp.obj /FdCMakeFiles\sbnw.dir\ /FS -c D:\sbnw\sbnw\canvas.cpp
+<<
+	cd D:\sbnw\cmake-build-debug
+
+sbnw\CMakeFiles\sbnw.dir\canvas.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sbnw.dir/canvas.cpp.i"
+	cd D:\sbnw\cmake-build-debug\sbnw
+	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx64\x64\cl.exe > CMakeFiles\sbnw.dir\canvas.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\sbnw\sbnw\canvas.cpp
+<<
+	cd D:\sbnw\cmake-build-debug
+
+sbnw\CMakeFiles\sbnw.dir\canvas.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sbnw.dir/canvas.cpp.s"
+	cd D:\sbnw\cmake-build-debug\sbnw
+	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx64\x64\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\sbnw.dir\canvas.cpp.s /c D:\sbnw\sbnw\canvas.cpp
+<<
+	cd D:\sbnw\cmake-build-debug
+
+sbnw\CMakeFiles\sbnw.dir\io.cpp.obj: sbnw\CMakeFiles\sbnw.dir\flags.make
+sbnw\CMakeFiles\sbnw.dir\io.cpp.obj: ..\sbnw\io.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\sbnw\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object sbnw/CMakeFiles/sbnw.dir/io.cpp.obj"
+	cd D:\sbnw\cmake-build-debug\sbnw
+	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx64\x64\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\sbnw.dir\io.cpp.obj /FdCMakeFiles\sbnw.dir\ /FS -c D:\sbnw\sbnw\io.cpp
+<<
+	cd D:\sbnw\cmake-build-debug
+
+sbnw\CMakeFiles\sbnw.dir\io.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sbnw.dir/io.cpp.i"
+	cd D:\sbnw\cmake-build-debug\sbnw
+	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx64\x64\cl.exe > CMakeFiles\sbnw.dir\io.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\sbnw\sbnw\io.cpp
+<<
+	cd D:\sbnw\cmake-build-debug
+
+sbnw\CMakeFiles\sbnw.dir\io.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sbnw.dir/io.cpp.s"
+	cd D:\sbnw\cmake-build-debug\sbnw
+	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx64\x64\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\sbnw.dir\io.cpp.s /c D:\sbnw\sbnw\io.cpp
 <<
 	cd D:\sbnw\cmake-build-debug
 
 # Object files for target sbnw
 sbnw_OBJECTS = \
-"CMakeFiles\sbnw.dir\NotARealClass.cpp.obj"
+"CMakeFiles\sbnw.dir\network.cpp.obj" \
+"CMakeFiles\sbnw.dir\arrowhead.cpp.obj" \
+"CMakeFiles\sbnw.dir\point.cpp.obj" \
+"CMakeFiles\sbnw.dir\transform.cpp.obj" \
+"CMakeFiles\sbnw.dir\box.cpp.obj" \
+"CMakeFiles\sbnw.dir\autolayoutSBML.cpp.obj" \
+"CMakeFiles\sbnw.dir\error.cpp.obj" \
+"CMakeFiles\sbnw.dir\layout.cpp.obj" \
+"CMakeFiles\sbnw.dir\geom.cpp.obj" \
+"CMakeFiles\sbnw.dir\canvas.cpp.obj" \
+"CMakeFiles\sbnw.dir\io.cpp.obj"
 
 # External object files for target sbnw
 sbnw_EXTERNAL_OBJECTS =
 
-sbnw\sbnw.dll: sbnw\CMakeFiles\sbnw.dir\NotARealClass.cpp.obj
+sbnw\sbnw.dll: sbnw\CMakeFiles\sbnw.dir\network.cpp.obj
+sbnw\sbnw.dll: sbnw\CMakeFiles\sbnw.dir\arrowhead.cpp.obj
+sbnw\sbnw.dll: sbnw\CMakeFiles\sbnw.dir\point.cpp.obj
+sbnw\sbnw.dll: sbnw\CMakeFiles\sbnw.dir\transform.cpp.obj
+sbnw\sbnw.dll: sbnw\CMakeFiles\sbnw.dir\box.cpp.obj
+sbnw\sbnw.dll: sbnw\CMakeFiles\sbnw.dir\autolayoutSBML.cpp.obj
+sbnw\sbnw.dll: sbnw\CMakeFiles\sbnw.dir\error.cpp.obj
+sbnw\sbnw.dll: sbnw\CMakeFiles\sbnw.dir\layout.cpp.obj
+sbnw\sbnw.dll: sbnw\CMakeFiles\sbnw.dir\geom.cpp.obj
+sbnw\sbnw.dll: sbnw\CMakeFiles\sbnw.dir\canvas.cpp.obj
+sbnw\sbnw.dll: sbnw\CMakeFiles\sbnw.dir\io.cpp.obj
 sbnw\sbnw.dll: sbnw\CMakeFiles\sbnw.dir\build.make
 sbnw\sbnw.dll: "C:\Program Files (x86)\libsbml\lib\libsbml.lib"
 sbnw\sbnw.dll: sbnw\CMakeFiles\sbnw.dir\objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\sbnw\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library sbnw.dll"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\sbnw\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX shared library sbnw.dll"
 	cd D:\sbnw\cmake-build-debug\sbnw
-	C:\Users\cwelsh\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\193.6494.38\bin\cmake\win\bin\cmake.exe -E vs_link_dll --intdir=CMakeFiles\sbnw.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\mt.exe --manifests  -- C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\sbnw.dir\objects1.rsp @<<
- /out:sbnw.dll /implib:sbnw.lib /pdb:D:\sbnw\cmake-build-debug\sbnw\sbnw.pdb /dll /version:0.0 /machine:X86 /debug /INCREMENTAL "C:\Program Files (x86)\libsbml\lib\libsbml.lib" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib  
+	C:\Users\cwelsh\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\193.6494.38\bin\cmake\win\bin\cmake.exe -E vs_link_dll --intdir=CMakeFiles\sbnw.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x64\mt.exe --manifests  -- C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx64\x64\link.exe /nologo @CMakeFiles\sbnw.dir\objects1.rsp @<<
+ /out:sbnw.dll /implib:sbnw.lib /pdb:D:\sbnw\cmake-build-debug\sbnw\sbnw.pdb /dll /version:0.0 /machine:x64 /debug /INCREMENTAL "C:\Program Files (x86)\libsbml\lib\libsbml.lib" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib  
 <<
 	cd D:\sbnw\cmake-build-debug
 

@@ -39,7 +39,7 @@
 //== INCLUDES ========================================================================
 
 #include "sbnw/core/SagittariusCore.h"
-#include "point.h"
+#include "sbnw/point.h"
 #include "sbnw/math/transform.h"
 #include "arrowhead.h"
 

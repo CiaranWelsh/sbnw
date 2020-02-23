@@ -3,7 +3,7 @@
 //
 
 #include "gtest/gtest.h"
-#include "sbnw/Network.h"
+#include "sbnw/network.h"
 
 
 TEST(tests, test1) {
